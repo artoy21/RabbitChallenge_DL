@@ -1,6 +1,6 @@
 # 応用数学レポート
 1. [線形代数](#線形代数)
-2. [確率・統計](#確率・統計)
+2. [確率・統計](#確率統計)
 3. [情報理論](#情報理論)
 
 ## 線形代数
@@ -58,7 +58,7 @@ for i in range(len(sv)):
 np.allclose(M, U.dot(S).dot(VT))
 ```
 
-## 確率・統計
+## 確率統計
 - 条件付き確率
   - ある事象<img src="https://latex.codecogs.com/gif.latex?X=x" />を条件とした下で、事象<img src="https://latex.codecogs.com/gif.latex?Y=y" />となる確率<br/>
 <img src="https://latex.codecogs.com/gif.latex?P(Y=y\,|\,X=x)=\frac{P(Y=y,\,X=x)}{P(X=x)}" /><br/>
