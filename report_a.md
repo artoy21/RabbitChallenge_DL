@@ -23,6 +23,9 @@
 <img src="https://latex.codecogs.com/gif.latex?\Lambda=\left(\begin{matrix}\lambda_1&&&\\&\lambda_2&&\\&&\lambda_3&\\&&&\ddots\end{matrix}\right)" />、<br/>
 <img src="https://latex.codecogs.com/gif.latex?V=(v_1\:v_2\:v_3\:\cdots)" />として、<br/>
 <img src="https://latex.codecogs.com/gif.latex?A=V\Lambda&space;V^{-1}" />と変形できる
+  - この変形によって、行列<img src="https://latex.codecogs.com/gif.latex?A" />の累乗の計算を<br/>
+<img src="https://latex.codecogs.com/gif.latex?A^n=V\left(\begin{matrix}\lambda_1^n&&&\\&\lambda_2^n&&\\&&\lambda_3^n&\\&&&\ddots\end{matrix}\right)V^{-1}" /><br/>
+から容易に行うことができる
 
 - 特異値分解 
 
