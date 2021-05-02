@@ -1,7 +1,7 @@
 # 応用数学レポート
 1. [線形代数](#線形代数)
-2. <a href="prob">確率・統計</a>
-3. <a href="entropy">情報量</a>
+2. [確率・統計](#確率・統計)
+3. [情報理論](#情報理論)
 
 ## 線形代数
 - スカラー、ベクトル、行列
@@ -58,7 +58,7 @@ for i in range(len(sv)):
 np.allclose(M, U.dot(S).dot(VT))
 ```
 
-## 第二章　確率・統計
+## 確率・統計
 - 条件付き確率
   - ある事象<img src="https://latex.codecogs.com/gif.latex?X=x" />を条件とした下で、事象<img src="https://latex.codecogs.com/gif.latex?Y=y" />となる確率<br/>
 <img src="https://latex.codecogs.com/gif.latex?P(Y=y\,|\,X=x)=\frac{P(Y=y,\,X=x)}{P(X=x)}" /><br/>
@@ -75,4 +75,4 @@ np.allclose(M, U.dot(S).dot(VT))
 - 二項分布
 - ガウス分布
 
-## 第三章　情報理論
+## 情報理論
