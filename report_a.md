@@ -14,7 +14,10 @@
 <img src="https://latex.codecogs.com/gif.latex?AA^{-1}=A^{-1}A=I" />を満たす。
   - 行列式が0の行列は逆行列を持たない
 - 固有値と固有ベクトル
-  - 
+  - 行列<img src="https://latex.codecogs.com/gif.latex?A" />に対して、<img src="https://latex.codecogs.com/gif.latex?Ax={\lambda}x" />となる時、
+ベクトル<img src="https://latex.codecogs.com/gif.latex?x" />は<img src="https://latex.codecogs.com/gif.latex?A" />の固有ベクトル、
+スカラー<img src="https://latex.codecogs.com/gif.latex?\lambda" />は<img src="https://latex.codecogs.com/gif.latex?A" />の固有値
+
 1. 確率・統計
 
 1. 情報理論
