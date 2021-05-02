@@ -13,7 +13,7 @@
 元の行列の逆行列を<img src="https://latex.codecogs.com/gif.latex?A^{-1}" />とすると、
 <img src="https://latex.codecogs.com/gif.latex?AA^{-1}=A^{-1}A=I" />を満たす。
   - 行列式が0の行列は逆行列を持たない
-  - Pythonで逆行列を返す関数
+  - Pythonで逆行列を取得する関数
 ```
 import numpy as np
 # Aは元の行列
@@ -32,7 +32,12 @@ np.linalg.inv(A)
   - この変形によって、行列<img src="https://latex.codecogs.com/gif.latex?A" />の累乗は<br/>
 <img src="https://latex.codecogs.com/gif.latex?A^n=V\left(\begin{matrix}\lambda_1^n&&&\\&\lambda_2^n&&\\&&\lambda_3^n&\\&&&\ddots\end{matrix}\right)V^{-1}" /><br/>
 として計算できる
-
+  - Pythonで固有値と固有ベクトルを取得する関数
+```
+import numpy as np
+# Aは元の行列
+eigenvalue, eigenvector = np.linalg.eig(A)
+```
 - 特異値分解 
 
 1. 確率・統計
