@@ -13,6 +13,12 @@
 元の行列の逆行列を<img src="https://latex.codecogs.com/gif.latex?A^{-1}" />とすると、
 <img src="https://latex.codecogs.com/gif.latex?AA^{-1}=A^{-1}A=I" />を満たす。
   - 行列式が0の行列は逆行列を持たない
+  - Pythonで逆行列を返す関数
+```
+import numpy as np
+# Aは元の行列
+np.linalg.inv(A)
+```
 - 固有値と固有ベクトル
   - 正方行列<img src="https://latex.codecogs.com/gif.latex?A" />に対して、<img src="https://latex.codecogs.com/gif.latex?Av={\lambda}v" />となる時、
 ベクトル<img src="https://latex.codecogs.com/gif.latex?v" />は<img src="https://latex.codecogs.com/gif.latex?A" />の固有ベクトル、
@@ -20,12 +26,12 @@
 - 固有値分解
   - 正方行列<img src="https://latex.codecogs.com/gif.latex?A" />が固有値<img src="https://latex.codecogs.com/gif.latex?\lambda_1,\lambda_2,\lambda_3,\cdots" />
 と固有ベクトル<img src="https://latex.codecogs.com/gif.latex?v_1,v_2,v_3,\cdots" />を持つ時、<br/>
-<img src="https://latex.codecogs.com/gif.latex?\Lambda=\left(\begin{matrix}\lambda_1&&&\\&\lambda_2&&\\&&\lambda_3&\\&&&\ddots\end{matrix}\right)" />、<br/>
-<img src="https://latex.codecogs.com/gif.latex?V=(v_1\:v_2\:v_3\:\cdots)" />として、<br/>
+対角行列<img src="https://latex.codecogs.com/gif.latex?\Lambda=\left(\begin{matrix}\lambda_1&&&\\&\lambda_2&&\\&&\lambda_3&\\&&&\ddots\end{matrix}\right)" />と、<br/>
+直行行列<img src="https://latex.codecogs.com/gif.latex?V=(v_1\:v_2\:v_3\:\cdots)" />を用いて、<br/>
 <img src="https://latex.codecogs.com/gif.latex?A=V\Lambda&space;V^{-1}" />と変形できる
-  - この変形によって、行列<img src="https://latex.codecogs.com/gif.latex?A" />の累乗の計算を<br/>
+  - この変形によって、行列<img src="https://latex.codecogs.com/gif.latex?A" />の累乗は<br/>
 <img src="https://latex.codecogs.com/gif.latex?A^n=V\left(\begin{matrix}\lambda_1^n&&&\\&\lambda_2^n&&\\&&\lambda_3^n&\\&&&\ddots\end{matrix}\right)V^{-1}" /><br/>
-から容易に行うことができる
+として計算できる
 
 - 特異値分解 
 
