@@ -57,11 +57,11 @@ np.allclose(M, U.dot(S).dot(VT))
 
 ## 第二章　確率・統計
 - 条件付き確率
-ある事象<img src="https://latex.codecogs.com/gif.latex?X=x" />を条件とした下で、事象<img src="https://latex.codecogs.com/gif.latex?Y=y" />となる確率<br/>
+  - ある事象<img src="https://latex.codecogs.com/gif.latex?X=x" />を条件とした下で、事象<img src="https://latex.codecogs.com/gif.latex?Y=y" />となる確率<br/>
 <img src="https://latex.codecogs.com/gif.latex?P(Y=y\,|\,X=x)=\frac{P(Y=y,\,X=x)}{P(X=x)}" /><br/>
 （ここで、<img src="https://latex.codecogs.com/gif.latex?P(Y=y,\,X=x)" />は、事象<img src="https://latex.codecogs.com/gif.latex?X=x" />と事象<img src="https://latex.codecogs.com/gif.latex?Y=y" />が同時に発生する確率）
 - ベイズ則
-事象<img src="https://latex.codecogs.com/gif.latex?X=x" />と事象<img src="https://latex.codecogs.com/gif.latex?Y=y" />に対して、<br/>
+  - 事象<img src="https://latex.codecogs.com/gif.latex?X=x" />と事象<img src="https://latex.codecogs.com/gif.latex?Y=y" />に対して、<br/>
 <img src="https://latex.codecogs.com/gif.latex?P(X=x\,|\,Y=y)P(Y=y)=P(Y=y\,|\,X=x)P(X=x)" />が成り立つ
 - 期待値
 - 分散と共分散、標準偏差
