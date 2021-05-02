@@ -38,7 +38,11 @@ import numpy as np
 # Aは元の行列
 eigenvalue, eigenvector = np.linalg.eig(A)
 ```
-- 特異値分解 
+- 特異値分解
+  - 正方行列以外の行列に対しても、固有値分解と似た分解ができる
+  - <img src="https://latex.codecogs.com/gif.latex?MM^T" />を固有値分解した固有ベクトルを並べた行列を<img src="https://latex.codecogs.com/gif.latex?U" />、固有値の2乗を対角成分とする対角行列を<img src="https://latex.codecogs.com/gif.latex?SS^T" />、<br>
+<img src="https://latex.codecogs.com/gif.latex?M^TM" />を固有値分解した固有ベクトルを並べた行列を<img src="https://latex.codecogs.com/gif.latex?V" />、固有値の2乗を対角成分とする対角行列を<img src="https://latex.codecogs.com/gif.latex?S^TS" />として、<br>
+<img src="https://latex.codecogs.com/gif.latex?M=USV^{-1}" />
 
 1. 確率・統計
 
