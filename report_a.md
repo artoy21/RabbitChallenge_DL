@@ -64,10 +64,8 @@ np.allclose(M, U.dot(S).dot(VT))
   - 事象<img src="https://latex.codecogs.com/gif.latex?X=x" />と事象<img src="https://latex.codecogs.com/gif.latex?Y=y" />に対して、<br/>
 <img src="https://latex.codecogs.com/gif.latex?P(X=x\,|\,Y=y)P(Y=y)=P(Y=y\,|\,X=x)P(X=x)" />が成り立つ
 - 期待値
-  - 確率変数<img src="https://latex.codecogs.com/gif.latex?X" />が離散値を取る場合、<br/>
-<img src="https://latex.codecogs.com/gif.latex?E[f(X)]=\sum_{k=1}^nf(X=x_k)P(X=x_k)" />
-  - 確率変数<img src="https://latex.codecogs.com/gif.latex?X" />が連続値を取る場合、<br/>
-<img src="https://latex.codecogs.com/gif.latex?E[f(X)]=\int&space;f(X=x)P(X=x)dx" />
+  - 確率変数<img src="https://latex.codecogs.com/gif.latex?X" />が離散値を取る場合、<br/><img src="https://latex.codecogs.com/gif.latex?E[f(X)]=\sum_{k=1}^nf(X=x_k)P(X=x_k)" />
+  - 確率変数<img src="https://latex.codecogs.com/gif.latex?X" />が連続値を取る場合、<br/><img src="https://latex.codecogs.com/gif.latex?E[f(X)]=\int&space;f(X=x)P(X=x)dx" />
 - 分散と共分散、標準偏差
 - ベルヌーイ分布
 - カテゴリカル分布
