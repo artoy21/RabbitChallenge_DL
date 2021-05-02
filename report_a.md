@@ -1,6 +1,6 @@
 # 応用数学レポート
 
-1. 線形代数
+## 第一章　線形代数
 - スカラー、ベクトル、行列
   - スカラーの一次元配列がベクトル
   - スカラーの二次元配列が行列
@@ -46,9 +46,15 @@ eigenvalue, eigenvector = np.linalg.eig(A)
 ```
 import numpy as np
 # Mは元の行列
-eigenvalue, eigenvector = np.linalg.eig(A)
+U, sv, VT = np.linalg.svd(M)
+
+# 元の行列を復元できるか確認
+S = np.zeros_like(M, dtype=float)
+for i in range(len(sv)):
+  S[i,i] = sv[i]
+np.allclose(M, U.dot(S).dot(VT))
 ```
 
-1. 確率・統計
+## 第二章　確率・統計
 
-1. 情報理論
+## 第三章　情報理論
