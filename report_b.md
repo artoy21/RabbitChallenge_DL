@@ -7,7 +7,7 @@
 6. [k-means](#k-means)
 7. [サポートベクターマシン（SVM）](#サポートベクターマシン)
 
-- 各手法の位置付け
+- 各手法の位置付け（講義資料より引用）
 ![image](https://user-images.githubusercontent.com/34636490/116880664-408f4800-ac5d-11eb-9c85-572ab9d5921f.png)
 
 
