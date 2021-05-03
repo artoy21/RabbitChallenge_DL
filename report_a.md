@@ -86,9 +86,12 @@ np.allclose(M, U.dot(S).dot(VT))
   - 確率<img src="https://latex.codecogs.com/gif.latex?P(x)" />の事象<img src="https://latex.codecogs.com/gif.latex?x" />が発生した時の珍しさ<br/><img src="https://latex.codecogs.com/gif.latex?I(x)=-\log_2P(x)" />
   - 確率1/2で起こる事象の自己情報量は1bit
 - エントロピー
-  - 自己情報量の期待値<br/><img src="https://latex.codecogs.com/gif.latex?H(x)=E[I(x)]=-\sum\left(P(x)\log_2P(x)\right)" />
+  - 自己情報量の期待値<br/><img src="https://latex.codecogs.com/gif.latex?H(x)=E[I(x)]=E[-\log_2P(x)]=-\sum\left(P(x)\log_2P(x)\right)" />
+  - 確率分布<img src="https://latex.codecogs.com/gif.latex?P(x)" />の不確実性の尺度
   - 表と裏の出る確率が共に1/2のコイン投げのエントロピーは、<br/><img src="https://latex.codecogs.com/gif.latex?H(x)=-\left(\frac{1}{2}\log_2\frac{1}{2}+\frac{1}{2}\log_2\frac{1}{2}\right)=1" />
   - 表の出る確率が1、裏の出る確率が0のコイン投げ（不確実性が無い場合）のエントロピーは、<br/><img src="https://latex.codecogs.com/gif.latex?H(x)=-\left(1\log_21+\lim_{x\to+0}x\log_2x\right)=-\left(0+\lim_{x\to+0}\frac{-x}{\log2}\right)=0" />
 - カルバック・ライブラー　ダイバージェンス（KLダイバージェンス）
+  - 異なる確率分布間の距離みたいな概念<br/><img src="https://latex.codecogs.com/gif.latex?D_{KL}(P||Q)=E^P\left[\log_2\frac{P(x)}{Q(x)}\right]=\sum&space;P(x)\log_2\frac{P(x)}{Q(x)}" />
 - 交差エントロピー
-- 
+  - KLダイバージェンスの一部分を取り出したもの<br/><img src="https://latex.codecogs.com/gif.latex?H(P,Q)=E^P\left[-\log_2Q(x)\right]=-\sum&space;P(x)\log_2Q(x)=H(P)+D_{KL}(P||Q)" />
+  - <img src="https://latex.codecogs.com/gif.latex?P(x)" />が所与の場合、交差エントロピーの最小化はKLダイバージェンスの最小化（<img src="https://latex.codecogs.com/gif.latex?Q(x)" />を<img src="https://latex.codecogs.com/gif.latex?P(x)" />に**近付ける**こと）と同義
