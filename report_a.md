@@ -75,8 +75,10 @@ np.allclose(M, U.dot(S).dot(VT))
 "https://render.githubusercontent.com/render/math?math=%5Clarge+%5Cdisplaystyle+%5Cbegin%7Balign%2A%7D%0A%5Ctext%7BCov%7D+%5Cleft%28+f%28X%29%2C+%5C%2C+g%28Y%29+%5Cright%29+%26%3D+E+%5Cleft%5B+%5Cleft%28+f%28X%29+-+E%5Bf%28X%29%5D+%5Cright%29+%5Cleft%28+g%28Y%29+-+E%5Bg%28Y%29%5D+%5Cright%29+%5Cright%5D+%5C%5C%0A%26%3D+E+%5Cleft%5B+f%28X%29+g%28Y%29+%5Cright%5D+-+E%5Bf%28X%29%5DE%5Bg%28Y%29%5D%0A%5Cend%7Balign%2A%7D%0A" />
   - 標準偏差は分散の平方根<img src="https://latex.codecogs.com/gif.latex?\sigma(f(X))=\sqrt{\text{Var}(f(X))}" />で、<img src="https://latex.codecogs.com/gif.latex?f(X)" />と単位が同じ
 - ベルヌーイ分布
-- カテゴリカル分布
+  - 確率<img src="https://latex.codecogs.com/gif.latex?\mu" />で表（<img src="https://latex.codecogs.com/gif.latex?X=1" />）が、確率<img src="https://latex.codecogs.com/gif.latex?1-\mu" />で裏（<img src="https://latex.codecogs.com/gif.latex?X=0" />）が出るコインを投げた時の、<img src="https://latex.codecogs.com/gif.latex?X" />の確率分布<br/><img src="https://latex.codecogs.com/gif.latex?P(X=x|\mu)=\mu^x(1-\mu)^{1-x}" />
 - 二項分布
+  - 同様のコインを<img src="https://latex.codecogs.com/gif.latex?n" />回投げた時に、表が出る回数を確率変数<img src="https://latex.codecogs.com/gif.latex?X" />とする確率分布<br/><img src="https://latex.codecogs.com/gif.latex?P(X=x|\mu,\,n)=\frac{n!}{x!(n-x)!}\mu^x(1-\mu)^{n-x}" />
 - ガウス分布
+  - 左右対称の連続値を取る確率分布（正規分布）<br/><img src="https://latex.codecogs.com/gif.latex?p(x;\mu,\sigma^2)=\sqrt{\frac{1}{2\pi\sigma^2}}\exp\left(-\frac{1}{2\sigma^2}(x-\mu)^2\right)" />
 
 ## 情報理論
