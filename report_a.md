@@ -88,7 +88,7 @@ np.allclose(M, U.dot(S).dot(VT))
 - エントロピー
   - 自己情報量の期待値<br/><img src="https://latex.codecogs.com/gif.latex?H(x)=E[I(x)]=-\sum\left(P(x)\log_2P(x)\right)" />
   - 表と裏の出る確率が共に1/2のコイン投げのエントロピーは、<br/><img src="https://latex.codecogs.com/gif.latex?H(x)=-\left(\frac{1}{2}\log_2\frac{1}{2}+\frac{1}{2}\log_2\frac{1}{2}\right)=1" />
-  - 表の出る確率が1、裏の出る確率が0のコイン投げのエントロピーは、<br/><img src="https://latex.codecogs.com/gif.latex?H(x)=-\left(1\log_21+\lim_{x\to+0}x\log_2x\right)=-\left(0+\lim_{x\to+0}\frac{-x}{\log2}\right)=0" />
+  - 表の出る確率が1、裏の出る確率が0のコイン投げ（不確実性が無い場合）のエントロピーは、<br/><img src="https://latex.codecogs.com/gif.latex?H(x)=-\left(1\log_21+\lim_{x\to+0}x\log_2x\right)=-\left(0+\lim_{x\to+0}\frac{-x}{\log2}\right)=0" />
 - カルバック・ライブラー　ダイバージェンス（KLダイバージェンス）
 - 交差エントロピー
 - 
