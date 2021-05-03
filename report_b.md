@@ -7,6 +7,10 @@
 6. [k-means](#k-means)
 7. [サポートベクターマシン（SVM）](#サポートベクターマシン)
 
+- 各手法の位置付け
+![image](https://user-images.githubusercontent.com/34636490/116880664-408f4800-ac5d-11eb-9c85-572ab9d5921f.png)
+
+
 ## 線形回帰モデル
 ## 非線形回帰モデル
 ## ロジスティック回帰モデル
