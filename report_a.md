@@ -71,7 +71,7 @@ np.allclose(M, U.dot(S).dot(VT))
   - 確率変数<img src="https://latex.codecogs.com/gif.latex?X" />が連続値を取る場合、<br/><img src="https://latex.codecogs.com/gif.latex?E[f(X)]=\int&space;f(X=x)P(X=x)dx" />
 - 分散と共分散、標準偏差
   - 分散はデータの散らばり具合<br/><img src="https://latex.codecogs.com/gif.latex?\text{Var}\left(f(X)\right)=E\left[\left(f(X)-E[f(X)]\right)^2\right]=E\left[f(X)^2\right]-E[f(X)]^2" />
-  - 共分散は2つのデータ系列の傾向の違い<br/><img src="https://latex.codecogs.com/gif.latex?\begin{eqnarray}\text{Cov}\left(f(X),\,g(Y)\right)&=&E\left[\left(f(X)-E[f(X)]\right)\left(g(Y)-E[g(Y)]\right)\right]\\&=&E\left[f(X)g(Y)\right]-E[f(X)]E[g(Y)]\end{eqnarray}" />
+  - 共分散は2つのデータ系列の傾向の違い<br/><img src="https://latex.codecogs.com/gif.latex?\begin{eqnarray*}\text{Cov}\left(f(X),\,g(Y)\right)&space;&&space;=&space;&&space;E\left[\left(f(X)-E[f(X)]\right)\left(g(Y)-E[g(Y)]\right)\right]&space;\\&space;&&space;=&space;&&space;E\left[f(X)g(Y)\right]-E[f(X)]E[g(Y)]\end{eqnarray*}" />
 - ベルヌーイ分布
 - カテゴリカル分布
 - 二項分布
