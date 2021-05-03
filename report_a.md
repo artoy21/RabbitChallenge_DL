@@ -94,4 +94,4 @@ np.allclose(M, U.dot(S).dot(VT))
   - 異なる確率分布間の距離みたいな概念<br/><img src="https://latex.codecogs.com/gif.latex?D_{KL}(P||Q)=E^P\left[\log_2\frac{P(x)}{Q(x)}\right]=\sum&space;P(x)\log_2\frac{P(x)}{Q(x)}" />
 - 交差エントロピー
   - KLダイバージェンスの一部分を取り出したもの<br/><img src="https://latex.codecogs.com/gif.latex?H(P,Q)=E^P\left[-\log_2Q(x)\right]=-\sum&space;P(x)\log_2Q(x)=H(P)+D_{KL}(P||Q)" />
-  - <img src="https://latex.codecogs.com/gif.latex?P(x)" />が所与の場合、交差エントロピーの最小化はKLダイバージェンスの最小化（<img src="https://latex.codecogs.com/gif.latex?Q(x)" />を<img src="https://latex.codecogs.com/gif.latex?P(x)" />に**近付ける**こと）と同義
+  - <img src="https://latex.codecogs.com/gif.latex?P(x)" />が所与の場合、交差エントロピーの最小化はKLダイバージェンスの最小化（**<img src="https://latex.codecogs.com/gif.latex?Q(x)" />を<img src="https://latex.codecogs.com/gif.latex?P(x)" />に近付ける**こと）と同義
