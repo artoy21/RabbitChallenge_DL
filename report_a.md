@@ -70,6 +70,8 @@ np.allclose(M, U.dot(S).dot(VT))
   - 確率変数<img src="https://latex.codecogs.com/gif.latex?X" />が離散値を取る場合、<br/><img src="https://latex.codecogs.com/gif.latex?E[f(X)]=\sum_{k=1}^nf(X=x_k)P(X=x_k)" />
   - 確率変数<img src="https://latex.codecogs.com/gif.latex?X" />が連続値を取る場合、<br/><img src="https://latex.codecogs.com/gif.latex?E[f(X)]=\int&space;f(X=x)P(X=x)dx" />
 - 分散と共分散、標準偏差
+  - データの散らばり具合  
+<img src="https://latex.codecogs.com/gif.latex?\text{Var}\left(f(X)\right)=E\left[\left(f(X=x)-E[f(X)]\right)^2\right]=E\left[f(X=x)^2\right]-E[f(X)]^2" />
 - ベルヌーイ分布
 - カテゴリカル分布
 - 二項分布
