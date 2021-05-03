@@ -82,3 +82,13 @@ np.allclose(M, U.dot(S).dot(VT))
   - 左右対称の連続値を取る確率分布（正規分布）<br/><img src="https://latex.codecogs.com/gif.latex?p(x;\mu,\sigma^2)=\sqrt{\frac{1}{2\pi\sigma^2}}\exp\left(-\frac{1}{2\sigma^2}(x-\mu)^2\right)" />
 
 ## 情報理論
+- 自己情報量
+  - 確率<img src="https://latex.codecogs.com/gif.latex?P(x)" />の事象<img src="https://latex.codecogs.com/gif.latex?x" />が発生した時の珍しさ<br/><img src="https://latex.codecogs.com/gif.latex?I(x)=-\log_2P(x)" />
+  - 確率1/2で起こる事象の自己情報量は1bit
+- エントロピー
+  - 自己情報量の期待値<br/><img src="https://latex.codecogs.com/gif.latex?H(x)=E[I(x)]=-\sum\left(P(x)\log_2P(x)\right)" />
+  - 表と裏の出る確率が共に1/2のコイン投げのエントロピーは、<br/><img src="https://latex.codecogs.com/gif.latex?H(x)=-\left(\frac{1}{2}\log_2\frac{1}{2}+\frac{1}{2}\log_2\frac{1}{2}\right)=1" />
+  - 表の出る確率が1、裏の出る確率が0のコイン投げのエントロピーは、<br/><img src="https://latex.codecogs.com/gif.latex?H(x)=-\left(1\log_21+\lim_{x\to+0}x\log_2x\right)=-\left(0+\lim_{x\to+0}\frac{-x}{\log2}\right)=0" />
+- カルバック・ライブラー　ダイバージェンス（KLダイバージェンス）
+- 交差エントロピー
+- 
