@@ -20,6 +20,7 @@
 - 課題
   - 部屋数が4で犯罪率が0.3の物件はいくらになるか？
   
+<img src="https://user-images.githubusercontent.com/34636490/117115070-908a1e00-adc7-11eb-8882-e0eefc9a05d5.png" width="400">
 ![image](https://user-images.githubusercontent.com/34636490/117115070-908a1e00-adc7-11eb-8882-e0eefc9a05d5.png)
 
 
