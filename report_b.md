@@ -14,12 +14,13 @@
 ## 線形回帰モデル
 - 教師あり学習の一種
 - 定式化
-  - 説明変数を<img src="https://latex.codecogs.com/gif.latex?x=(x_1,x_2,\cdots,x_m)^T\in\mathbb{R}^m" />、目的変数を<img src="https://latex.codecogs.com/gif.latex?y\in\mathbb{R}" />
-  - パラメータを<img src="https://latex.codecogs.com/gif.latex?w_0\in\mathbb{R},\:w=(w_1,w_2,\cdots,w_m)^T\in\mathbb{R}^m" />
-  - として、<img src="https://latex.codecogs.com/gif.latex?y=w_0+w^Tx" />
+  - 説明変数を<img src="https://latex.codecogs.com/gif.latex?\vec{x}=(1,x_1,x_2,\cdots,x_m)^T\in\mathbb{R}^{m+1}" />、目的変数を<img src="https://latex.codecogs.com/gif.latex?y\in\mathbb{R}" />
+  - パラメータを<img src="https://latex.codecogs.com/gif.latex?\vec{w}=(w_0,w_1,w_2,\cdots,w_m)^T\in\mathbb{R}^{m+1}" />、誤差項を<img src="https://latex.codecogs.com/gif.latex?\varepsilon\in\mathbb{R}" />
+  - として、<img src="https://latex.codecogs.com/gif.latex?y=\vec{w}^T\vec{x}+\varepsilon" />
+  - 教師データが<img src="https://latex.codecogs.com/gif.latex?1,\cdots,n" />まである時、<img src="https://latex.codecogs.com/gif.latex?X=(\vec{x}_1,\vec{x}_2,\cdots,\vec{x}_n)^T,\:\vec{y}=(y_1,y_2,\cdots,y_n)^T,\:\vec{\varepsilon}=(\varepsilon_1,\varepsilon_2,\cdots,\varepsilon_n)^T" />として、<br/><img src="https://latex.codecogs.com/gif.latex?\vec{y}=X\vec{w}+\vec{\varepsilon}" />
 - パラメータの推定
   - 最小二乗法を利用
-  - <img src="https://latex.codecogs.com/gif.latex?\mathrm{MSE}=\frac{1}{n}\sum_{i=1}^n\left(\hat{y}_i-y_i\right)^2" />
+  - 平均二乗誤差を<img src="https://latex.codecogs.com/gif.latex?\mathrm{MSE}=\frac{1}{n}\sum_{i=1}^n\left(\hat{y}_i-y_i\right)^2" />として、<img src="https://latex.codecogs.com/gif.latex?\frac{\partial}{\partial&space;w}\mathrm{MSE}=0" />を解いて<img src="https://latex.codecogs.com/gif.latex?w" />を求める
 ### 実装演習
 - 設定
   - ボストンの住宅データセットを線形回帰モデルで分析
