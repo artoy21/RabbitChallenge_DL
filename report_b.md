@@ -12,8 +12,14 @@
 
 
 ## 線形回帰モデル
-
-
+- 教師あり学習の一種
+- 定式化
+  - 説明変数を<img src="https://latex.codecogs.com/gif.latex?x=(x_1,x_2,\cdots,x_m)^T\in\mathbb{R}^m" />、目的変数を<img src="https://latex.codecogs.com/gif.latex?y\in\mathbb{R}" />
+  - パラメータを<img src="https://latex.codecogs.com/gif.latex?w_0\in\mathbb{R},\:w=(w_1,w_2,\cdots,w_m)^T\in\mathbb{R}^m" />
+  - として、<img src="https://latex.codecogs.com/gif.latex?y=w_0+w^Tx" />
+- パラメータの推定
+  - 最小二乗法を利用
+  - <img src="https://latex.codecogs.com/gif.latex?\mathrm{MSE}=\frac{1}{n}\sum_{i=1}^n\left(\hat{y}_i-y_i\right)^2" />
 ### 実装演習
 - 設定
   - ボストンの住宅データセットを線形回帰モデルで分析
