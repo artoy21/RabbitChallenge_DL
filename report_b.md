@@ -19,11 +19,10 @@
   - ボストンの住宅データセットを線形回帰モデルで分析
 - 課題
   - 部屋数が4で犯罪率が0.3の物件はいくらになるか？
-  
+- コードのキャプション
 <img src="https://user-images.githubusercontent.com/34636490/117115070-908a1e00-adc7-11eb-8882-e0eefc9a05d5.png" width="800">
-
-![image](https://user-images.githubusercontent.com/34636490/117115070-908a1e00-adc7-11eb-8882-e0eefc9a05d5.png)
-
+- 結果
+  - 4240.1ドルと予測
 
 ## 非線形回帰モデル
 ## ロジスティック回帰モデル
