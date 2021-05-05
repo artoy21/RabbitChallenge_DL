@@ -8,7 +8,7 @@
 7. [サポートベクターマシン（SVM）](#サポートベクターマシン)
 
 - 各手法の位置付け（講義資料より引用）
-![image](https://user-images.githubusercontent.com/34636490/116880664-408f4800-ac5d-11eb-9c85-572ab9d5921f.png)
+<img src="https://user-images.githubusercontent.com/34636490/116880664-408f4800-ac5d-11eb-9c85-572ab9d5921f.png" width="800">
 
 
 ## 線形回帰モデル
@@ -20,7 +20,9 @@
 - 課題
   - 部屋数が4で犯罪率が0.3の物件はいくらになるか？
 - コードのキャプション
+
 <img src="https://user-images.githubusercontent.com/34636490/117115070-908a1e00-adc7-11eb-8882-e0eefc9a05d5.png" width="800">
+
 - 結果
   - 4240.1ドルと予測
 
