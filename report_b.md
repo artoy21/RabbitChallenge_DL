@@ -45,11 +45,11 @@
   - 非線形な構造を捉えられる仕組みが必要
 - 定式化
   - 基底展開法
-    - 線形回帰モデルの説明変数に、基底関数と呼ばれる既知の非線形関数を適用<br/><img src="https://latex.codecogs.com/gif.latex?y=w_0+\sum_{j=1}^mw_j\phi_j(x)+\varepsilon" />
+    - 線形回帰モデルの説明変数に、基底関数と呼ばれる既知の非線形関数を適用<br/><img src="https://latex.codecogs.com/gif.latex?y=w_0+\sum_{j=1}^kw_j\phi_j(x)+\varepsilon" />
     - よく使われる基底関数は、多項式関数、ガウス型基底関数、Bスプライン関数
 - パラメータの推定
   - 基底展開法も線形回帰モデルと同様に、最小二乗法で推定可能
-  - 
+  - <img src="https://latex.codecogs.com/gif.latex?\phi(x_i)=(\phi_1(x_i),\phi_2(x_i),\cdots,\phi_k(x_i))^T\in\mathbb{R}^k,\:\Phi=(\phi(x_1),\phi(x_2),\cdots,\phi(x_n))^T\in\mathbb{R}^{n\times&space;k} " />として、<br/><img src="https://latex.codecogs.com/gif.latex?\hat{w}=\left(\Phi^T\Phi\right)^{-1}\Phi^Ty" />
 - 未学習と過学習
   - 不要な基底関数を削除
   - 正則化法
