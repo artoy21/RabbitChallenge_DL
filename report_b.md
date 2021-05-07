@@ -82,6 +82,9 @@
 - 課題
   - 部屋数が4で犯罪率が0.3の物件はいくらになるか？
 - コードのキャプション
+
+<img src="https://user-images.githubusercontent.com/34636490/117450846-ba387600-af7c-11eb-902e-8cebfadeded4.png" width=800>
+
 - 結果
   - 17353.4ドルと予測
     - 多項式関数を用いた基底展開法を1次式から4次式まで作成
