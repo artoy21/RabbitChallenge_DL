@@ -105,7 +105,41 @@
   - <img src="https://latex.codecogs.com/gif.latex?y_1,y_2,\cdots,y_n" />が同一のベルヌーイ分布に従う独立した確率変数とすると、尤度関数Lは次のようになる<br/><img src=
 "https://render.githubusercontent.com/render/math?math=%5Cdisplaystyle+%5Cbegin%7Balign%2A%7D%0AP%28y_1%2Cy_2%2C%5Ccdots%2Cy_n+%5Cmid+x%29+%26%3D+%5Cprod_%7Bi%3D1%7D%5En+P%28y_i%3D1+%5Cmid+x_i%29%5E%7By_i%7D%281-P%28y_i%3D1+%5Cmid+x_i%29%29%5E%7B1-y_i%7D+%5C%5C%0A%26%3D+%5Cprod+_%7Bi%3D1%7D%5En+%5Csigma%28w%5ETx_i%29%5E%7By_i%7D%281-%5Csigma%28w%5ETx_i%29%29%5E%7B1-y_i%7D+%5C%5C%0A%26%3D+L%28w%29%0A%5Cend%7Balign%2A%7D%0A" />
   - 尤度関数の最大化は対数尤度関数に-1を掛けたものの最小化と同値<br/><img src="https://latex.codecogs.com/gif.latex?\hat{w}=\text{argmax}_wL(w)=\text{argmin}_w-\log&space;L(w)=\text{argmin}_w-\sum_{i=1}^n\left(y_i\log\sigma(w^Tx_i)+(1-y_i)\log(1-\sigma(w^Tx_i)\right)" />
-
+  - 線形回帰モデルと異なり、ロジスティック回帰モデルの解析解を求めることは困難なため、勾配降下法によりパラメータを探索する
+- 勾配降下法
+  - 最小化したい目的関数の一次微分を計算して、逐次的にパラメータを更新する<br/><img src="https://latex.codecogs.com/gif.latex?w^{k+1}=w^k-\eta\frac{\partial\text{Loss}(w)}{\partial&space;w}" />
+  - <img src="https://latex.codecogs.com/gif.latex?\eta" />は学習率と呼ばれるハイパーパラメータで、学習の収束しやすさに影響する
+  - ロジスティック回帰モデルの場合、<br/><img src="https://latex.codecogs.com/gif.latex?w^{k+1}=w^k+\eta\sum_{i=1}^n(y_i-\sigma(w^Tx_i))x_i" />
+- 確率的勾配降下法
+  - 勾配降下法では、パラメータを1回更新する度にn個全てのデータに対する和を求める必要があり、nが大きいとデータをメモリに載せる容量や計算時間が莫大になる
+  - データを1つずつランダムに選んでパラメータを更新する手法が確率的勾配降下法（SGD)<br/><img src="https://latex.codecogs.com/gif.latex?w^{k+1}=w^k+\eta(y_i-\sigma(w^Tx_i))x_i" />
+- 評価方法
+  - 混同行列(confusion matrix)（講義資料より引用）
+  
+  <img src="https://user-images.githubusercontent.com/34636490/117457228-fae7bd80-af83-11eb-813a-7934e3a12a03.png" width=800>
+  
+  - 正解率
+    - (TP+TN)/(TP+FP+FN+TN)
+    - 分類したいクラスに偏りがある場合、正解率はあまり意味をなさないことがほとんど
+  - 再現率(Recall)
+    - TP/(TP+FN)
+    - 「Positiveなデータ」のうち、Positiveと予測できた割合
+    - **抜け漏れの少ない**予測をしたい際に有効な指標
+  - 適合率(Precision)
+    - TP/(TP+FP)
+    - 「Positiveと予測」したもので、実際にPositiveなデータの割合
+    - **見逃しが多くても**より正確な予測をしたい際に有効な指標
+  - F値
+    - 2/(1/Recall + 1/Precision)
+    - RecallとPrecisionはトレードオフの関係にあるため、調和平均を取ってバランスを示す指標
+### 実装演習
+- 設定
+  - タイタニックの乗客データを利用しロジスティック回帰モデルを作成
+  - 特徴量抽出をしてみる
+- 課題
+  - 年齢が30歳で男の乗客は生き残れるか？
+- コードのキャプション
+- 結果
 ## 主成分分析
 ## k近傍法
 ## k-means
