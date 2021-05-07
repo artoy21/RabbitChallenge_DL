@@ -83,7 +83,7 @@
   - 部屋数が4で犯罪率が0.3の物件はいくらになるか？
 - コードのキャプション
 
-<img src="https://user-images.githubusercontent.com/34636490/117450846-ba387600-af7c-11eb-902e-8cebfadeded4.png" width=800>
+<img src="https://user-images.githubusercontent.com/34636490/117450846-ba387600-af7c-11eb-902e-8cebfadeded4.png" width=600>
 
 - 結果
   - 17353.4ドルと予測
@@ -91,6 +91,18 @@
     - データセットを5分割したクロスバリデーションの結果、cv値（RMSE）が最小となる2次式を採用
 
 ## ロジスティック回帰モデル
+- 教師あり学習の一種
+  - 分類問題に利用
+- 定式化
+  - ロジスティック線形回帰モデル
+    - 入力とパラメータの線形結合をシグモイド関数に入力
+    - 出力は<img src="https://latex.codecogs.com/gif.latex?y=1" />になる確率の値になる<br/><img src="https://latex.codecogs.com/gif.latex?P(y=1\mid&space;x)=\sigma(w_0+w_1x_1+\cdots+w_mx_m)" />
+  - シグモイド関数
+    - 入力は実数、出力は0~1の値（単調増加）<br/><img src="https://latex.codecogs.com/gif.latex?\sigma(x)=\frac{1}{1+\exp(-x)}" />
+    - シグモイド関数の微分は、シグモイド関数自身で表現される<br/><img src="https://latex.codecogs.com/gif.latex?\frac{d}{dx}\sigma(x)=\sigma(x)(1-\sigma(x))" />
+- パラメータの推定
+  - 最尤法を利用する
+  - <img src="https://latex.codecogs.com/gif.latex?y_1,y_2,\cdots,y_n" />が同一のベルヌーイ分布に従う独立した確率変数とすると、<br/>
 ## 主成分分析
 ## k近傍法
 ## k-means
