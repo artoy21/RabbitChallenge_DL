@@ -102,7 +102,9 @@
     - シグモイド関数の微分は、シグモイド関数自身で表現される<br/><img src="https://latex.codecogs.com/gif.latex?\frac{d}{dx}\sigma(x)=\sigma(x)(1-\sigma(x))" />
 - パラメータの推定
   - 最尤法を利用する
-  - <img src="https://latex.codecogs.com/gif.latex?y_1,y_2,\cdots,y_n" />が同一のベルヌーイ分布に従う独立した確率変数とすると、<br/>
+  - <img src="https://latex.codecogs.com/gif.latex?y_1,y_2,\cdots,y_n" />が同一のベルヌーイ分布に従う独立した確率変数とすると、尤度関数Lは次のようになる<br/><img src=
+"https://render.githubusercontent.com/render/math?math=%5Cdisplaystyle+%5Cbegin%7Balign%2A%7D%0AP%28y_1%2Cy_2%2C%5Ccdots%2Cy_n+%5Cmid+x%29+%26%3D+%5Cprod_%7Bi%3D1%7D%5En+P%28y_i%3D1+%5Cmid+x_i%29%5E%7By_i%7D%281-P%28y_i%3D1+%5Cmid+x_i%29%29%5E%7B1-y_i%7D+%5C%5C%0A%26%3D+%5Cprod+_%7Bi%3D1%7D%5En+%5Csigma%28w%5ETx_i%29%5E%7By_i%7D%281-%5Csigma%28w%5ETx_i%29%29%5E%7B1-y_i%7D+%5C%5C%0A%26%3D+L%28w%29%0A%5Cend%7Balign%2A%7D%0A" />
+
 ## 主成分分析
 ## k近傍法
 ## k-means
