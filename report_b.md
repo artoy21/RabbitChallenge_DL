@@ -103,7 +103,8 @@
   - 最尤法を利用する
   - <img src="https://latex.codecogs.com/gif.latex?y_1,y_2,\cdots,y_n" />が同一のベルヌーイ分布に従う独立した確率変数とすると、尤度関数Lは次のようになる<br/><img src=
 "https://render.githubusercontent.com/render/math?math=%5Cdisplaystyle+%5Cbegin%7Balign%2A%7D%0AP%28y_1%2Cy_2%2C%5Ccdots%2Cy_n+%5Cmid+x%29+%26%3D+%5Cprod_%7Bi%3D1%7D%5En+P%28y_i%3D1+%5Cmid+x_i%29%5E%7By_i%7D%281-P%28y_i%3D1+%5Cmid+x_i%29%29%5E%7B1-y_i%7D+%5C%5C%0A%26%3D+%5Cprod+_%7Bi%3D1%7D%5En+%5Csigma%28w%5ETx_i%29%5E%7By_i%7D%281-%5Csigma%28w%5ETx_i%29%29%5E%7B1-y_i%7D+%5C%5C%0A%26%3D+L%28w%29%0A%5Cend%7Balign%2A%7D%0A" />
-  - 尤度関数の最大化は対数尤度関数に-1を掛けたものの最小化と同値<br/><img src="https://latex.codecogs.com/gif.latex?\hat{w}=\text{argmax}_wL(w)=\text{argmin}_w-\log&space;L(w)=\text{argmin}_w-\sum_{i=1}^n\left(y_i\log\sigma(w^Tx_i)+(1-y_i)\log(1-\sigma(w^Tx_i)\right)" />
+  - 尤度関数の最大化は対数尤度関数に-1を掛けたものの最小化と同値<br/><img src=
+"https://render.githubusercontent.com/render/math?math=%5Cdisplaystyle+%5Cbegin%7Balign%2A%7D%0A%5Chat%7Bw%7D+%26%3D+%5Ctext%7Bargmax%7D_wL%28w%29+%5C%5C%0A%26%3D+%5Ctext%7Bargmin%7D_w+%5Cleft%5C%7B+-%5Clog+L%28w%29+%5Cright%5C%7D+%5C%5C%0A%26%3D+%5Ctext%7Bargmin%7D_w+%5Cleft%5C%7B+-%5Csum_%7Bi%3D1%7D%5En%5Cleft%28y_i%5Clog%5Csigma%28w%5ETx_i%29%2B%281-y_i%29%5Clog%281-%5Csigma%28w%5ETx_i%29%5Cright%29+%5Cright%5C%7D%0A%5Cend%7Balign%2A%7D%0A" />
   - 線形回帰モデルと異なり、ロジスティック回帰モデルの解析解を求めることは困難なため、勾配降下法によりパラメータを探索する
 - 勾配降下法
   - 最小化したい目的関数の一次微分を計算して、逐次的にパラメータを更新する<br/><img src="https://latex.codecogs.com/gif.latex?w^{k+1}=w^k-\eta\frac{\partial\text{Loss}(w)}{\partial&space;w}" />
