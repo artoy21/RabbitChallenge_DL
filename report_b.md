@@ -152,7 +152,7 @@
   - 情報の量を分散の大きさと捉え、<img src="https://latex.codecogs.com/gif.latex?s"/>の分散が最大となる<img src="https://latex.codecogs.com/gif.latex?a"/>を探索する<br/><img src="https://latex.codecogs.com/gif.latex?\text{Var}(s)=a^T\text{Var}(X)a"/>
 - パラメータの推定
   - 制約条件付き最適化問題を解く<br/><img src="https://latex.codecogs.com/gif.latex?\text{argmax}_aa^T\text{Var}(X)a\:\:\:s.t.\,a^Ta=1"/>
-  - ラグランジュ乗数法を用いる<br/><img src="https://latex.codecogs.com/gif.latex?L(a)=a^T\text{Var}(X)a-\lambda(a^Ta-1)"/>として、<br/><img src="https://latex.codecogs.com/gif.latex?\frac{L(a)}{a}=2\text{Var}(X)a-2\lambda&space;a=0\:\LeftRightArrow\:\text{Var}(X)a=\lambda&space;a"/>
+  - ラグランジュ乗数法を用いる<br/><img src="https://latex.codecogs.com/gif.latex?L(a)=a^T\text{Var}(X)a-\lambda(a^Ta-1)"/>として、<br/><img src="https://latex.codecogs.com/gif.latex?\frac{L(a)}{a}=2\text{Var}(X)a-2\lambda&space;a=0\:\Leftrightarrow\:\text{Var}(X)a=\lambda&space;a"/>
   
 ## アルゴリズム
 ### k近傍法（kNN）
