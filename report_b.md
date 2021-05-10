@@ -148,7 +148,7 @@
 - 教師なし学習の一種
   - 多変量データの持つ構造をより少数個の指標に圧縮（次元圧縮）
 - 定式化
-  - <img src="https://latex.codecogs.com/gif.latex?m"/>次元データのデータ行列を<img src="https://latex.codecogs.com/gif.latex?X=(x_1-\bar{x},\cdots,x_m-\bar{x})^T\in\mathbb{R}^{n\times&space;m}" />としたとき（<img src="https://latex.codecogs.com/gif.latex?\bar{x}"/>はサンプル平均）、<br/>係数ベクトル<img src="https://latex.codecogs.com/gif.latex?a\in\mathbb{R}^m"/>による線形変換<img src="https://latex.codecogs.com/gif.latex?s=Xa"/>を考える
+  - <img src="https://latex.codecogs.com/gif.latex?m"/>次元データのデータ行列を<img src="https://latex.codecogs.com/gif.latex?X=(x_1,x_2,\cdots,x_m)^T\in\mathbb{R}^{n\times&space;m}" />としたとき、<br/>係数ベクトル<img src="https://latex.codecogs.com/gif.latex?a\in\mathbb{R}^m"/>による線形変換<img src="https://latex.codecogs.com/gif.latex?s=Xa"/>を考える
   - 情報の量を分散の大きさと捉え、<img src="https://latex.codecogs.com/gif.latex?s"/>の分散が最大となる<img src="https://latex.codecogs.com/gif.latex?a"/>を探索する<br/><img src="https://latex.codecogs.com/gif.latex?\text{Var}(s)=a^T\text{Var}(X)a"/>
 - パラメータの推定
   - 制約条件付き最適化問題を解く<br/><img src="https://latex.codecogs.com/gif.latex?\text{argmax}_aa^T\text{Var}(X)a\:\:\:s.t.\,a^Ta=1"/>
