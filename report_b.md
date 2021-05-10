@@ -156,8 +156,19 @@
   - 元のデータの分散共分散行列の固有値と固有ベクトルが解
     - 分散共分散行列は正定値対称行列のため、固有値は0以上、固有ベクトルは直行ベクトルとなる
 - 主成分
-  - 固有値を大きい順に並べたとき、対応するk番目の固有ベクトルで射影した<img src="https://latex.codecogs.com/gif.latex?s_k=Xa_k"/>を第k主成分と呼ぶ
-  - 
+  - 固有値を大きい順に並べたとき、対応するk番目の固有ベクトル<img src="https://latex.codecogs.com/gif.latex?a_k"/>を第k主成分ベクトル、<img src="https://latex.codecogs.com/gif.latex?a_k"/>で射影した<img src="https://latex.codecogs.com/gif.latex?s_k=Xa_k"/>を第k主成分と呼ぶ
+  - 第k主成分の分散は主成分に対応する固有値<img src="https://latex.codecogs.com/gif.latex?\lambda_k"/>
+  - 寄与率：第k主成分の分散の全分散に対する割合(第k主成分が持つ情報量の割合)
+### 実装演習
+- 設定
+  - 乳がん検査データを利用しロジスティック回帰モデルを作成
+  - 主成分を利用し2次元空間上に次元圧縮
+- 課題
+  - 32次元のデータを2次元上に次元圧縮した際に、うまく判別できるかを確認
+- コードのキャプション
+
+- 結果
+
 ## アルゴリズム
 ### k近傍法（kNN）
 ### k-means
