@@ -148,15 +148,15 @@
 - 教師なし学習の一種
   - 多変量データの持つ構造をより少数個の指標に圧縮（次元圧縮）
 - 定式化
-  - <img src="https://latex.codecogs.com/gif.latex?m"/>次元データのデータ行列を<img src="https://latex.codecogs.com/gif.latex?X=(x_1,x_2,\cdots,x_m)^T\in\mathbb{R}^{n\times&space;m}" />としたとき、<br/>係数ベクトル<img src="https://latex.codecogs.com/gif.latex?a\in\mathbb{R}^m"/>による線形変換<img src="https://latex.codecogs.com/gif.latex?s=Xa"/>を考える
-  - 情報の量を分散の大きさと捉え、<img src="https://latex.codecogs.com/gif.latex?s"/>の分散が最大となる<img src="https://latex.codecogs.com/gif.latex?a"/>を探索する<br/><img src="https://latex.codecogs.com/gif.latex?\text{Var}(s)=a^T\text{Var}(X)a"/>
+  - 学習データを<img src="https://latex.codecogs.com/gif.latex?x\in\mathbb{R}^m" />としたとき、<br/>係数ベクトル<img src="https://latex.codecogs.com/gif.latex?a\in\mathbb{R}^m"/>による線形変換<img src="https://latex.codecogs.com/gif.latex?s=a^Tx"/>を考える
+  - 情報の量を分散の大きさと捉え、<img src="https://latex.codecogs.com/gif.latex?s"/>の分散が最大となる<img src="https://latex.codecogs.com/gif.latex?a"/>を探索する<br/><img src="https://latex.codecogs.com/gif.latex?\text{Var}(s)=a^T\text{Var}(x)a"/>
 - パラメータの推定
-  - 制約条件付き最適化問題を解く<br/><img src="https://latex.codecogs.com/gif.latex?\text{argmax}_aa^T\text{Var}(X)a\:\:\:s.t.\,a^Ta=1"/>
-  - ラグランジュ乗数法を用いる<br/><img src="https://latex.codecogs.com/gif.latex?L(a)=a^T\text{Var}(X)a-\lambda(a^Ta-1)"/>として、<br/><img src="https://latex.codecogs.com/gif.latex?\frac{\partial&space;L(a)}{\partial&space;a}=2\text{Var}(X)a-2\lambda&space;a=0\:\Leftrightarrow\:\text{Var}(X)a=\lambda&space;a"/>
+  - 制約条件付き最適化問題を解く<br/><img src="https://latex.codecogs.com/gif.latex?\text{argmax}_aa^T\text{Var}(x)a\:\:\:s.t.\,a^Ta=1"/>
+  - ラグランジュ乗数法を用いる<br/><img src="https://latex.codecogs.com/gif.latex?L(a)=a^T\text{Var}(x)a-\lambda(a^Ta-1)"/>として、<br/><img src="https://latex.codecogs.com/gif.latex?\frac{\partial&space;L(a)}{\partial&space;a}=2\text{Var}(x)a-2\lambda&space;a=0\:\Leftrightarrow\:\text{Var}(x)a=\lambda&space;a"/>
   - 元のデータの分散共分散行列の固有値と固有ベクトルが解
     - 分散共分散行列は正定値対称行列のため、固有値は0以上、固有ベクトルは直行ベクトルとなる
 - 主成分
-  - 固有値を大きい順に並べたとき、対応するk番目の固有ベクトル<img src="https://latex.codecogs.com/gif.latex?a_k"/>を第k主成分ベクトル、<img src="https://latex.codecogs.com/gif.latex?a_k"/>で射影した<img src="https://latex.codecogs.com/gif.latex?s_k=Xa_k"/>を第k主成分と呼ぶ
+  - 固有値を大きい順に並べたとき、対応するk番目の固有ベクトル<img src="https://latex.codecogs.com/gif.latex?a_k"/>を第k主成分ベクトル、<img src="https://latex.codecogs.com/gif.latex?a_k"/>で射影した<img src="https://latex.codecogs.com/gif.latex?s_k=a_k^Tx"/>を第k主成分と呼ぶ
   - 第k主成分の分散は主成分に対応する固有値<img src="https://latex.codecogs.com/gif.latex?\lambda_k"/>
   - 寄与率：第k主成分の分散の全分散に対する割合(第k主成分が持つ情報量の割合)
 ### 実装演習
