@@ -167,7 +167,7 @@
   - 32次元のデータを2次元上に次元圧縮した際に、うまく判別できるかを確認
 - コードのキャプション
 
-<img src="https://user-images.githubusercontent.com/34636490/117987613-9b1f5700-b375-11eb-8a75-6f6ded7ba564.png" width=400>
+<img src="https://user-images.githubusercontent.com/34636490/117989534-5e545f80-b377-11eb-98d7-45f75c6fa4c8.png" width=450>
 
 - 結果
   - 30変数を使ったモデルの検証スコア（97%）よりは劣るが、第1・第2主成分の2変数でも検証スコア94%と高い精度が得られた
