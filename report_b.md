@@ -139,7 +139,7 @@
   - 年齢が30歳で男の乗客は生き残れるか？
 - コードのキャプション
 
-<img src="https://user-images.githubusercontent.com/34636490/117982457-f9960680-b370-11eb-8542-c4e8dc54e82d.png" width=600>
+<img src="https://user-images.githubusercontent.com/34636490/117982457-f9960680-b370-11eb-8542-c4e8dc54e82d.png" width=500>
 
 - 結果
   - 生存確率は19.3%と計算され、死亡と予測
@@ -167,7 +167,7 @@
   - 32次元のデータを2次元上に次元圧縮した際に、うまく判別できるかを確認
 - コードのキャプション
 
-<img src="https://user-images.githubusercontent.com/34636490/117987613-9b1f5700-b375-11eb-8a75-6f6ded7ba564.png" width=600>
+<img src="https://user-images.githubusercontent.com/34636490/117987613-9b1f5700-b375-11eb-8a75-6f6ded7ba564.png" width=400>
 
 - 結果
   - 30変数を使ったモデルの検証スコア（97%）よりは劣るが、第1・第2主成分の2変数でも検証スコア94%と高い精度が得られた
