@@ -139,7 +139,7 @@
   - 年齢が30歳で男の乗客は生き残れるか？
 - コードのキャプション
 
-<img src="https://user-images.githubusercontent.com/34636490/117662571-a9853b80-b1da-11eb-83d0-24c612f3a626.png" width=800>
+<img src="https://user-images.githubusercontent.com/34636490/117982457-f9960680-b370-11eb-8542-c4e8dc54e82d.png" width=600>
 
 - 結果
   - 生存確率は19.3%と計算され、死亡と予測
