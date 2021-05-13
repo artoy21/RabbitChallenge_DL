@@ -192,7 +192,7 @@
 <img src="https://user-images.githubusercontent.com/34636490/118144205-23216180-b447-11eb-861d-1a9747b9fc25.png" width=800>
 
 - 考察
-  - 
+  - kを3から5、5から10と大きくするほど、決定境界が滑らかになる様子が確認できた
 
 ### k-means
 - 教師なし学習の一種
