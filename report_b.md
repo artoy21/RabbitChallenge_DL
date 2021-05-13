@@ -189,7 +189,7 @@
   - 人工データと分類結果をプロットする
 - 結果のキャプション
 
-<img src="https://user-images.githubusercontent.com/34636490/118143887-c9209c00-b446-11eb-94de-8731908d3c6a.png" width=800>
+<img src="https://user-images.githubusercontent.com/34636490/118144205-23216180-b447-11eb-861d-1a9747b9fc25.png" width=800>
 
 - 考察
   - 
