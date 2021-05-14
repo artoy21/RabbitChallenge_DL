@@ -233,5 +233,5 @@
     - カーネル関数を<img src="https://latex.codecogs.com/gif.latex?k(x_i,x_j)=\phi(x_i)^T\phi(x_j)" />と仮定することで、無限次元の特徴空間も扱うことが容易になる
     - RBFカーネル（ガウシアンカーネル）：<img src="https://latex.codecogs.com/gif.latex?k(x_i,x_j)=\exp\left(-\frac{\|x_i-x_j\|^2}{2\sigma^2}\right)" />
   - ソフトマージンSVM：学習データの一部が誤分類されたり、誤分類されないもののマージン内部に入ることを許容するSVM
-    - 
+    - スラック変数
 - 特徴
