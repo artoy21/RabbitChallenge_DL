@@ -219,3 +219,12 @@
   - 一方、ラベル2のクラスターは3つのクラスそれぞれが含まれる結果となり、Class_2のワインはアルコール度数などの特徴量がClass_0やClass_1のワインと近いものが多いと言える
 
 ## サポートベクターマシン
+- 教師あり学習の一種
+  - 2値分類するための手法（回帰にも利用可能）
+  - 判別関数（決定境界）と最も近いデータ点（サポートベクトル）との距離（マージン）が最大となる判別関数を求める
+  - 判別関数は<img src="https://latex.codecogs.com/gif.latex?y=\boldsymbol{w}^T\phi(\boldsymbol{x})+b" />の形をとる
+- 定式化
+  - ハードマージンSVM：全ての学習データを正確に分類することを制約条件としたSVM
+    - 制約条件付きのマージン最大化問題<img src="https://latex.codecogs.com/gif.latex?\text{max}_{\boldsymbol{w},b}\frac{1}{\|\|\boldsymbol{w}\|\|}\:\text{s.t.}\,t_i(\boldsymbol{w}^T\phi(\boldsymbol{x})+b)\gt&space;1\,(i=1,\cdots,n)" />
+  - ソフトマージンSVM：学習データの一部が誤分類されたり、誤分類されないもののマージン内部に入ることを許容するSVM
+- 特徴
