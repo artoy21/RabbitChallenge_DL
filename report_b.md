@@ -212,7 +212,9 @@
   - ワインの分類
 - コードのキャプション
 
-<img src="https://user-images.githubusercontent.com/34636490/118249058-f1a8a480-b4df-11eb-9d18-c3f80c1a12ec.png" width=400>
+<img src="https://user-images.githubusercontent.com/34636490/118249058-f1a8a480-b4df-11eb-9d18-c3f80c1a12ec.png" width=300>
 
+- 考察
+  - k=3としたk-meansの結果、ラベル0のグループがClass_0と、ラベル1のグループがClass_1
 
 ## サポートベクターマシン
