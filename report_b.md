@@ -225,6 +225,6 @@
   - 判別関数は<img src="https://latex.codecogs.com/gif.latex?y=\boldsymbol{w}^T\phi(\boldsymbol{x})+b" />の形をとる
 - 定式化
   - ハードマージンSVM：全ての学習データを正確に分類することを制約条件としたSVM
-    - 制約条件付きのマージン最大化問題<img src="https://latex.codecogs.com/gif.latex?\text{max}_{\boldsymbol{w},b}\frac{1}{\|\|\boldsymbol{w}\|\|}\:\text{s.t.}\,t_i(\boldsymbol{w}^T\phi(\boldsymbol{x})+b)\gt&space;1\,(i=1,\cdots,n)" />
+    - 制約条件付きのマージン最大化問題<img src="https://latex.codecogs.com/gif.latex?\text{max}_{\boldsymbol{w},b}\frac{1}{\|\|\boldsymbol{w}\|\|}\:\text{s.t.}\,t_i(\boldsymbol{w}^T\phi(\boldsymbol{x})+b)\geq&space;1\,(i=1,\cdots,n)" />
   - ソフトマージンSVM：学習データの一部が誤分類されたり、誤分類されないもののマージン内部に入ることを許容するSVM
 - 特徴
