@@ -215,6 +215,7 @@
 <img src="https://user-images.githubusercontent.com/34636490/118249058-f1a8a480-b4df-11eb-9d18-c3f80c1a12ec.png" width=300>
 
 - 考察
-  - k=3としたk-meansの結果、ラベル0のグループがClass_0と、ラベル1のグループがClass_1
+  - k=3としたk-meansの結果、ラベル0のクラスターがClass_0と、ラベル1のクラスターがClass_1と概ね対応している
+  - 一方、ラベル2のクラスターは3つのクラスそれぞれが含まれる結果となり、Class_2のワインはアルコール度数などの特徴量がClass_0やClass_1のワインと近いものが多いと言える
 
 ## サポートベクターマシン
