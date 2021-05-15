@@ -240,7 +240,7 @@
 
 - 予測
   - 未知のデータに対して、<img src="https://latex.codecogs.com/gif.latex?y(\boldsymbol{x}_{\text{new}})=\boldsymbol{w}^T\phi(\boldsymbol{x}_{\text{new}})+b=\sum_{i=1}^na_it_ik(\boldsymbol{x}_{\text{new}},\boldsymbol{x}_i)+b" />の正負によって分類
-  - ここでbは、<img src="https://latex.codecogs.com/gif.latex?b=\frac{1}{|S|}\sum_{s\in&space;S}\left(\frac{1}{t_i}-\sum_{i=1}^na_it_ik(x_i,x_s)\right)"/>
+  - ここで、サポートベクトルの集合をSとすると<img src="https://latex.codecogs.com/gif.latex?s\in&space;S}"/>では<img src="https://latex.codecogs.com/gif.latex?t_s(\boldsymbol{w}^T\phi(\boldsymbol{x}_s})+b)=0"/>が成り立つため、全サポートベクトルについてbを計算した平均値を採用することが一般的<br/><img src="https://latex.codecogs.com/gif.latex?b=\frac{1}{|S|}\sum_{s\in&space;S}\left(\frac{1}{t_i}-\sum_{i=1}^na_it_ik(x_i,x_s)\right)"/>
 
 #### 実装演習
 - 設定
