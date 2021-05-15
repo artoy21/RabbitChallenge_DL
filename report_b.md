@@ -238,6 +238,10 @@
     - 双対問題を考えると、ハードマージンSVMと類似した最適化問題に帰着する<br/><img src=
 "https://render.githubusercontent.com/render/math?math=%5Cdisplaystyle+%5Cbegin%7Balign%2A%7D%0A%26%5Ctext%7Bmax%7D_a+%5Csum_%7Bi%3D1%7D%5En+a_i+-+%5Cfrac%7B1%7D%7B2%7D+%5Csum_%7Bi%3D1%7D%5En+%5Csum_%7Bj%3D1%7D%5En+a_i+a_j+t_i+t_j+%5Cphi%28x_i%29%5ET+%5Cphi%28x_j%29+%5C%5C%0A%26%5Ctext%7Bs.t.%7D+%5C%3A+%5Cleft%5C%7B%0A%5Cbegin%7Balign%2A%7D+%5Csum_%7Bi%3D1%7D%5En+a_i+t_i+%26%3D+0+%5C%5C%0Aa_i+%26%5Cgeq+0+%5C%5C%0Aa_i+%26%5Cleq+C%0A%5Cend%7Balign%2A%7D%0A%5Cright.+%2C%5C%3A%28i%3D1%2C%5Ccdots%2Cn%29%0A%5Cend%7Balign%2A%7D%0A" />
 
+- 予測
+  - 未知のデータに対して、<img src="https://latex.codecogs.com/gif.latex?y(\boldsymbol{x}_{\text{new}})=\boldsymbol{w}^T\phi(\boldsymbol{x}_{\text{new}})+b=\sum_{i=1}^na_it_ik(\boldsymbol{x}_{\text{new}},\boldsymbol{x}_i)+b" />の正負によって分類
+  
+
 #### 実装演習
 - 設定
   - 人工データを分類
