@@ -245,15 +245,15 @@
 #### 実装演習
 - 設定
   - 人工データを非線形カーネルを用いたソフトマージンSVMで分類する
-<img src="https://user-images.githubusercontent.com/34636490/118345169-bce32e80-b56d-11eb-8217-91c8dda09861.png"/ width=400>
+<img src="https://user-images.githubusercontent.com/34636490/118345169-bce32e80-b56d-11eb-8217-91c8dda09861.png" width=400 />
 
 - 結果のキャプション
   - 学習部分と予測部分
-<img src="https://user-images.githubusercontent.com/34636490/118345194-e603bf00-b56d-11eb-93b6-5da9a159e05b.png" width=400/>
-<img src="https://user-images.githubusercontent.com/34636490/118345213-f9af2580-b56d-11eb-9f1d-68dee15e7433.png" width=500/>
-<img src="https://user-images.githubusercontent.com/34636490/118345240-13e90380-b56e-11eb-8753-db061c3b0385.png" width=600/>
+<img src="https://user-images.githubusercontent.com/34636490/118345194-e603bf00-b56d-11eb-93b6-5da9a159e05b.png" width=250 />
+<img src="https://user-images.githubusercontent.com/34636490/118345213-f9af2580-b56d-11eb-9f1d-68dee15e7433.png" width=500 />
+<img src="https://user-images.githubusercontent.com/34636490/118345240-13e90380-b56e-11eb-8753-db061c3b0385.png" width=600 />
   - トレードオフのパラメータを変えて推計結果の変化を確認
-<img src="https://user-images.githubusercontent.com/34636490/118345260-2cf1b480-b56e-11eb-9dd1-f97993b638e1.png" width=900/>
+<img src="https://user-images.githubusercontent.com/34636490/118345260-2cf1b480-b56e-11eb-9dd1-f97993b638e1.png" width=900 />
 
 - 考察
   - ハイパーパラメータCが小さい（C=1）と、マージンが大きい一方、誤分類やマージンの外側に入るデータ点が多い
