@@ -14,7 +14,7 @@
 ## 入力層～中間層
 
 ### 要点のまとめ
-- 入力層には学習データの各特徴量が変数として与えられる
+- 入力層には学習データの各特徴量（例：身長、体重、写真の画素値、・・・）が変数として与えられる
 - 入力層の各入力値を重みパラメータで加重平均し、バイアスパラメータを加えた結果が中間層に渡される
 - 入力層の入力を<img src="https://latex.codecogs.com/gif.latex?\boldsymbol{x}=(x_1,\cdots,x_n)^T"/>、重みパラメータを<img src="https://latex.codecogs.com/gif.latex?\boldsymbol{w}=(w_1,\cdots,w_n)^T"/>、バイアスパラメータを<img src="https://latex.codecogs.com/gif.latex?b" />として、中間層に渡される<img src="https://latex.codecogs.com/gif.latex?u" />は<br/><img src="https://latex.codecogs.com/gif.latex?u=w_1x_1+w_2x_2+\cdots+w_nx_n+b=\boldsymbol{x}^T\boldsymbol{w}+b" />
 ### 実装演習結果
