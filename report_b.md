@@ -244,12 +244,12 @@
 
 #### 実装演習
 - 設定
-  - 人工データを非線形カーネルを用いたソフトマージンSVMで分類する
+  - 下図の人工データを非線形カーネルを用いたソフトマージンSVMで分類する
 <img src="https://user-images.githubusercontent.com/34636490/118345169-bce32e80-b56d-11eb-8217-91c8dda09861.png" width=400 />
 
 - 結果のキャプション
   - 学習部分と予測部分
-<img src="https://user-images.githubusercontent.com/34636490/118345194-e603bf00-b56d-11eb-93b6-5da9a159e05b.png" width=250 />
+<img src="https://user-images.githubusercontent.com/34636490/118345194-e603bf00-b56d-11eb-93b6-5da9a159e05b.png" width=300 />
 <img src="https://user-images.githubusercontent.com/34636490/118345213-f9af2580-b56d-11eb-9f1d-68dee15e7433.png" width=500 />
 <img src="https://user-images.githubusercontent.com/34636490/118345240-13e90380-b56e-11eb-8753-db061c3b0385.png" width=600 />
   - トレードオフのパラメータを変えて推計結果の変化を確認
