@@ -237,4 +237,10 @@
     - <img src="https://latex.codecogs.com/gif.latex?\xi_i>0"/>の学習データは誤分類となっているかマージン内部に入っているため、目的関数に罰則項を追加する<br/><img src="https://latex.codecogs.com/gif.latex?\text{min}_{\boldsymbol{w},b}\frac{1}{2}\|\boldsymbol{w}\|^2+C\sum_{i=1}^n\xi_i\:\:\text{s.t.}\,t_i(\boldsymbol{w}^T\phi(\boldsymbol{x})+b)\geq&space;(1-\xi_i)\,(i=1,\cdots,n)" /><br/>Cはマージン最大化と誤分類等への罰則項最小化のトレードオフを決めるハイパーパラメータ
     - 双対問題を考えると、ハードマージンSVMと類似した最適化問題に帰着する<br/><img src=
 "https://render.githubusercontent.com/render/math?math=%5Cdisplaystyle+%5Cbegin%7Balign%2A%7D%0A%26%5Ctext%7Bmax%7D_a+%5Csum_%7Bi%3D1%7D%5En+a_i+-+%5Cfrac%7B1%7D%7B2%7D+%5Csum_%7Bi%3D1%7D%5En+%5Csum_%7Bj%3D1%7D%5En+a_i+a_j+t_i+t_j+%5Cphi%28x_i%29%5ET+%5Cphi%28x_j%29+%5C%5C%0A%26%5Ctext%7Bs.t.%7D+%5C%3A+%5Cleft%5C%7B%0A%5Cbegin%7Balign%2A%7D+%5Csum_%7Bi%3D1%7D%5En+a_i+t_i+%3D+0+%5C%5C%0Aa_i+%5Cgeq+0+%5C%5C%0Aa_i+%5Cleq+C%0A%5Cend%7Balign%2A%7D%0A%5Cright.+%2C%5C%3A%28i%3D1%2C%5Ccdots%2Cn%29%0A%5Cend%7Balign%2A%7D%0A" />
-- 特徴
+
+#### 実装演習
+- 設定
+  - 人工データを分類
+- 課題
+  - 人工データと分類結果をプロットする
+- 結果のキャプション
