@@ -234,4 +234,5 @@
     - RBFカーネル（ガウシアンカーネル）：<img src="https://latex.codecogs.com/gif.latex?k(x_i,x_j)=\exp\left(-\frac{\|x_i-x_j\|^2}{2\sigma^2}\right)" />
   - ソフトマージンSVM：学習データの一部が誤分類されたり、誤分類されないもののマージン内部に入ることを許容するSVM
     - スラック変数<img src="https://latex.codecogs.com/gif.latex?\xi_i\geq&space;0"/>を導入し、マージンに関する制約を<img src="https://latex.codecogs.com/gif.latex?t_i(\boldsymbol{w}^T\phi(\boldsymbol{x})+b)\geq&space;1-\xi_i\,(i=1,\cdots,n)" />と修正する
+    - <img src="https://latex.codecogs.com/gif.latex?\xi_i>0"/>の学習データは誤分類となっているかマージン内部に入っているため、目的関数に罰則項を追加する<br/><img src="https://latex.codecogs.com/gif.latex?\text{min}_{\boldsymbol{w},b}\frac{1}{2}\|\boldsymbol{w}\|^2+C\sum_{i=1}^n\xi_i\:\:\text{s.t.}\,t_i(\boldsymbol{w}^T\phi(\boldsymbol{x})+b)\geq&space;(1-\xi_i)\,(i=1,\cdots,n)" />
 - 特徴
