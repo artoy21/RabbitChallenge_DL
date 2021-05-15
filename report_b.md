@@ -225,7 +225,7 @@
   - 判別関数は<img src="https://latex.codecogs.com/gif.latex?y=\boldsymbol{w}^T\phi(\boldsymbol{x})+b" />の形をとる
 - 定式化
   - ハードマージンSVM：全ての学習データを正確に分類することを制約条件としたSVM
-    - 制約条件付きのマージン最大化問題<br/><img src="https://latex.codecogs.com/gif.latex?\text{max}_{\boldsymbol{w},b}\frac{1}{\|\boldsymbol{w}\|}\:\:\text{s.t.}\,t_i(\boldsymbol{w}^T\phi(\boldsymbol{x})+b)\geq&space;1\,(i=1,\cdots,n)" /><br/><img src="https://latex.codecogs.com/gif.latex?\Rightarrow&space;\text{min}_{\boldsymbol{w},b}\frac{1}{2}\|\boldsymbol{w}\|^2\:\:\text{s.t.}\,t_i(\boldsymbol{w}^T\phi(\boldsymbol{x})+b)\geq&space;1\,(i=1,\cdots,n)" />
+    - 制約条件付きのマージン最大化問題<br/><img src="https://latex.codecogs.com/gif.latex?\text{max}_{\boldsymbol{w},b}\frac{1}{\|\boldsymbol{w}\|}\:\:\text{s.t.}\,t_i(\boldsymbol{w}^T\phi(\boldsymbol{x}_i)+b)\geq&space;1\,(i=1,\cdots,n)" /><br/><img src="https://latex.codecogs.com/gif.latex?\Rightarrow&space;\text{min}_{\boldsymbol{w},b}\frac{1}{2}\|\boldsymbol{w}\|^2\:\:\text{s.t.}\,t_i(\boldsymbol{w}^T\phi(\boldsymbol{x}_i)+b)\geq&space;1\,(i=1,\cdots,n)" />
     - 双対問題を考える方が簡単<br/><img src=
 "https://render.githubusercontent.com/render/math?math=%5Cdisplaystyle+%5Cbegin%7Balign%2A%7D%0A%26%5Ctext%7Bmax%7D_a+%5Csum_%7Bi%3D1%7D%5En+a_i+-+%5Cfrac%7B1%7D%7B2%7D+%5Csum_%7Bi%3D1%7D%5En+%5Csum_%7Bj%3D1%7D%5En+a_i+a_j+t_i+t_j+%5Cphi%28x_i%29%5ET+%5Cphi%28x_j%29+%5C%5C%0A%26%5Ctext%7Bs.t.%7D+%5C%3A+%5Cleft%5C%7B%0A%5Cbegin%7Balign%2A%7D+%5Csum_%7Bi%3D1%7D%5En+a_i+t_i+%26%3D+0+%5C%5C%0Aa_i+%26%5Cgeq+0%0A%5Cend%7Balign%2A%7D%0A%5Cright.+%2C%5C%3A%28i%3D1%2C%5Ccdots%2Cn%29%0A%5Cend%7Balign%2A%7D%0A" />
   - カーネルトリック
@@ -233,8 +233,8 @@
     - カーネル関数を<img src="https://latex.codecogs.com/gif.latex?k(x_i,x_j)=\phi(x_i)^T\phi(x_j)" />と仮定することで、無限次元の特徴空間も扱うことが容易になる
     - RBFカーネル（ガウシアンカーネル）：<img src="https://latex.codecogs.com/gif.latex?k(x_i,x_j)=\exp\left(-\frac{\|x_i-x_j\|^2}{2\sigma^2}\right)" />
   - ソフトマージンSVM：学習データの一部が誤分類されたり、誤分類されないもののマージン内部に入ることを許容するSVM
-    - スラック変数<img src="https://latex.codecogs.com/gif.latex?\xi_i\geq&space;0"/>を導入し、マージンに関する制約を<img src="https://latex.codecogs.com/gif.latex?t_i(\boldsymbol{w}^T\phi(\boldsymbol{x})+b)\geq&space;1-\xi_i\,(i=1,\cdots,n)" />と修正する
-    - <img src="https://latex.codecogs.com/gif.latex?\xi_i>0"/>の学習データは誤分類となっているかマージン内部に入っているため、目的関数に罰則項を追加する<br/><img src="https://latex.codecogs.com/gif.latex?\text{min}_{\boldsymbol{w},b}\frac{1}{2}\|\boldsymbol{w}\|^2+C\sum_{i=1}^n\xi_i\:\:\text{s.t.}\,t_i(\boldsymbol{w}^T\phi(\boldsymbol{x})+b)\geq&space;(1-\xi_i)\,(i=1,\cdots,n)" /><br/>Cはマージン最大化と誤分類等への罰則項最小化のトレードオフを決めるハイパーパラメータ
+    - スラック変数<img src="https://latex.codecogs.com/gif.latex?\xi_i\geq&space;0"/>を導入し、マージンに関する制約を<img src="https://latex.codecogs.com/gif.latex?t_i(\boldsymbol{w}^T\phi(\boldsymbol{x}_i)+b)\geq&space;1-\xi_i\,(i=1,\cdots,n)" />と修正する
+    - <img src="https://latex.codecogs.com/gif.latex?\xi_i>0"/>の学習データは誤分類となっているかマージン内部に入っているため、目的関数に罰則項を追加する<br/><img src="https://latex.codecogs.com/gif.latex?\text{min}_{\boldsymbol{w},b}\frac{1}{2}\|\boldsymbol{w}\|^2+C\sum_{i=1}^n\xi_i\:\:\text{s.t.}\,t_i(\boldsymbol{w}^T\phi(\boldsymbol{x}_i)+b)\geq&space;(1-\xi_i)\,(i=1,\cdots,n)" /><br/>Cはマージン最大化と誤分類等への罰則項最小化のトレードオフを決めるハイパーパラメータ
     - 双対問題を考えると、ハードマージンSVMと類似した最適化問題に帰着する<br/><img src=
 "https://render.githubusercontent.com/render/math?math=%5Cdisplaystyle+%5Cbegin%7Balign%2A%7D%0A%26%5Ctext%7Bmax%7D_a+%5Csum_%7Bi%3D1%7D%5En+a_i+-+%5Cfrac%7B1%7D%7B2%7D+%5Csum_%7Bi%3D1%7D%5En+%5Csum_%7Bj%3D1%7D%5En+a_i+a_j+t_i+t_j+%5Cphi%28x_i%29%5ET+%5Cphi%28x_j%29+%5C%5C%0A%26%5Ctext%7Bs.t.%7D+%5C%3A+%5Cleft%5C%7B%0A%5Cbegin%7Balign%2A%7D+%5Csum_%7Bi%3D1%7D%5En+a_i+t_i+%26%3D+0+%5C%5C%0Aa_i+%26%5Cgeq+0+%5C%5C%0Aa_i+%26%5Cleq+C%0A%5Cend%7Balign%2A%7D%0A%5Cright.+%2C%5C%3A%28i%3D1%2C%5Ccdots%2Cn%29%0A%5Cend%7Balign%2A%7D%0A" />
 
