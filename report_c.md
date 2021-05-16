@@ -61,7 +61,7 @@
 
 ### 実装演習結果
 - 多クラス分類ネットワークの構成を3-5-4に変更して実装した結果
-<img src="https://user-images.githubusercontent.com/34636490/118392524-14b88d00-b675-11eb-8392-edd0aac65e07.png" width=250>
+<img src="https://user-images.githubusercontent.com/34636490/118392524-14b88d00-b675-11eb-8392-edd0aac65e07.png" width=400>
 
 - 回帰ネットワークの構成を3-5-4に変更して実装した結果
 <img src="https://user-images.githubusercontent.com/34636490/118392634-8abcf400-b675-11eb-94be-da0ad5e131de.png" width=250>
