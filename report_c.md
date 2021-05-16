@@ -67,7 +67,7 @@
 <img src="https://user-images.githubusercontent.com/34636490/118392634-8abcf400-b675-11eb-94be-da0ad5e131de.png" width=250>
 
 - 2値分類ネットワークの構成を5-10-1に変更して実装した結果
-<img src="https://user-images.githubusercontent.com/34636490/118393439-22244600-b67a-11eb-89d5-e8d87e5abf85.png" width=250>
+<img src="https://user-images.githubusercontent.com/34636490/118393439-22244600-b67a-11eb-89d5-e8d87e5abf85.png" width=350>
 
 ### 考察
 
