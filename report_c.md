@@ -41,10 +41,11 @@
 
 ### 実装演習結果
 
-<img src="https://user-images.githubusercontent.com/34636490/118391064-5c3b1b00-b66d-11eb-8572-b9e127bae731.png" width=250>
+<img src="https://user-images.githubusercontent.com/34636490/118391100-93113100-b66d-11eb-8ed1-af0cc0a9a697.png" width=250>
 
 ### 考察
-
+- 入力値の線形結合を非線形変換するのが活性化関数の役割とみられる
+- 0～1の確率表現をしたい場合など、目的に応じた活性化関数を選択する必要がある
 
 ## 出力層
 
