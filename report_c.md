@@ -94,11 +94,10 @@
   - SGDのメリットを損なわず、コンピュータの計算資源を有効利用できる
 
 ### 実装演習結果
-
+- 実装演習用コードの重み1の更新を計算
 <img src="https://user-images.githubusercontent.com/34636490/118654806-e75e1180-b823-11eb-82b3-e43dfe8ad6cf.png" width=300 />
 
 ### 考察
-- 実装演習用コードの重み1の更新を計算
 - 更新後パラメータは、初期値から学習率×勾配（偏微分係数）を引いた値となっている
 - 全てのパラメータにおいて勾配が負であるため、パラメータを大きくすることで誤差関数を小さくする方向に更新できている
 
@@ -106,7 +105,23 @@
 ### 要点のまとめ
 - 勾配の計算
   - 数値微分では各パラメータについて誤差関数を計算するために、ネットワークの順伝播計算を繰り返し行い計算負荷が大きい
-  - 誤差逆伝播法
+  - 誤差逆伝播法の利用で計算負荷を小さくできる
+- 誤差逆伝播法
+  - 参集された誤差を、出力層側から順に微分し、入力層に近い方へと伝播
+  - パラメータの微分値を**解析的に**計算する手法
+- 順伝播と逆伝播のイメージ（講義資料より）
+<img src="https://user-images.githubusercontent.com/34636490/118656195-440dfc00-b825-11eb-85cc-7c7093d9fc2d.png" width=600 />
+
+### 実装演習結果
+- 簡単のため、入力層を1次元、中間層も1次元とした二値分類問題を想定
+- 誤差関数はクロスエントロピー誤差
+<img src="https://user-images.githubusercontent.com/34636490/118664663-9ef72180-b82c-11eb-98e2-e2bd86ec19f7.png" width=250 />
+
+### 考察
+- 中間層の出力に対する偏微分<img src="https://latex.codecogs.com/gif.latex?\frac{\partial&space;E}{\partial&space;u_2}" />は、シグモイド関数による出力値（0.550）－正解ラベル（1）となっている
+- 中間層の重みに対する偏微分<img src="https://latex.codecogs.com/gif.latex?\frac{\partial&space;E}{\partial&space;w_2}" />は、<img src="https://latex.codecogs.com/gif.latex?\frac{\partial&space;E}{\partial&space;u_2}\frac{\partial&space;u_2}{\partial&space;w_2}=-0.450\times&space;u_1(=0.1)" />となっている
+- 入力層の出力に対する偏微分<img src="https://latex.codecogs.com/gif.latex?\frac{\partial&space;E}{\partial&space;u_1}" />は、<img src="https://latex.codecogs.com/gif.latex?\frac{\partial&space;E}{\partial&space;u_2}\frac{\partial&space;u_2}{\partial&space;u_1}=-0.450\times&space;w_2(=2.0)" />となっている
+- 入力層の重みに対する偏微分<img src="https://latex.codecogs.com/gif.latex?\frac{\partial&space;E}{\partial&space;w_1}" />は、<img src="https://latex.codecogs.com/gif.latex?\frac{\partial&space;E}{\partial&space;u_2}\frac{\partial&space;u_2}{\partial&space;u_1}\frac{\partial&space;u_1}{\partial&space;w_1}=-0.450\times&space;w_2(=2.0)\times&space;x(=0.1)" />となっている
 
 ## 勾配消失問題
 
