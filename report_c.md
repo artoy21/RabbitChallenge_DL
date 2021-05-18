@@ -122,7 +122,8 @@
 - 出力層でのデルタ<img src="https://latex.codecogs.com/gif.latex?\frac{\partial&space;E}{\partial&space;u_2}" />は、シグモイド関数による出力値（0.550）－正解ラベル（1）となっている
 - 重み2のデルタ<img src="https://latex.codecogs.com/gif.latex?\frac{\partial&space;E}{\partial&space;w_2}" />は、<img src="https://latex.codecogs.com/gif.latex?\frac{\partial&space;E}{\partial&space;u_2}\frac{\partial&space;u_2}{\partial&space;w_2}=-0.450\times&space;u_1(=0.1)" />となっている
 - 中間層でのデルタ<img src="https://latex.codecogs.com/gif.latex?\frac{\partial&space;E}{\partial&space;u_1}" />は、<img src="https://latex.codecogs.com/gif.latex?\frac{\partial&space;E}{\partial&space;u_2}\frac{\partial&space;u_2}{\partial&space;z_1}\frac{\partial&space;z_1}{\partial&space;u_1}=-0.450\times&space;w_2(=2.0)" />となっている（<img src="https://latex.codecogs.com/gif.latex?u_1>0"/>のため、ReLU関数の微分は1）
-- 重み1のデルタ<img src="https://latex.codecogs.com/gif.latex?\frac{\partial&space;E}{\partial&space;w_1}" />は、<img src="https://latex.codecogs.com/gif.latex?\frac{\partial&space;E}{\partial&space;u_2}\frac{\partial&space;u_2}{\partial&space;z_1}\frac{\partial&space;z_1}{\partial&space;u_1}\frac{\partial&space;u_1}{\partial&space;x_1}=-0.450\times&space;w_2(=2.0)\times&space;x(=0.1)" />となっている
+- 重み1のデルタ<img src="https://latex.codecogs.com/gif.latex?\frac{\partial&space;E}{\partial&space;w_1}" />は、<img src="https://latex.codecogs.com/gif.latex?\frac{\partial&space;E}{\partial&space;u_2}\frac{\partial&space;u_2}{\partial&space;z_1}\frac{\partial&space;z_1}{\partial&space;u_1}\frac{\partial&space;u_1}{\partial&space;w_1}=-0.450\times&space;w_2(=2.0)\times&space;x(=0.1)" />となっている
+- 1次元の簡単な設定ながら、誤差逆伝播法によって偏微分を出力層から入力層に向かって順次計算できていることが分かる
 
 ## 勾配消失問題
 
