@@ -114,14 +114,15 @@
 
 ### 実装演習結果
 - 簡単のため、入力層を1次元、中間層も1次元とした二値分類問題を想定
+- 入力層の活性化関数はReLU、中間層の活性化関数はシグモイド関数
 - 誤差関数はクロスエントロピー誤差
 <img src="https://user-images.githubusercontent.com/34636490/118664663-9ef72180-b82c-11eb-98e2-e2bd86ec19f7.png" width=250 />
 
 ### 考察
-- 中間層の出力に対する偏微分<img src="https://latex.codecogs.com/gif.latex?\frac{\partial&space;E}{\partial&space;u_2}" />は、シグモイド関数による出力値（0.550）－正解ラベル（1）となっている
-- 中間層の重みに対する偏微分<img src="https://latex.codecogs.com/gif.latex?\frac{\partial&space;E}{\partial&space;w_2}" />は、<img src="https://latex.codecogs.com/gif.latex?\frac{\partial&space;E}{\partial&space;u_2}\frac{\partial&space;u_2}{\partial&space;w_2}=-0.450\times&space;u_1(=0.1)" />となっている
-- 入力層の出力に対する偏微分<img src="https://latex.codecogs.com/gif.latex?\frac{\partial&space;E}{\partial&space;u_1}" />は、<img src="https://latex.codecogs.com/gif.latex?\frac{\partial&space;E}{\partial&space;u_2}\frac{\partial&space;u_2}{\partial&space;u_1}=-0.450\times&space;w_2(=2.0)" />となっている
-- 入力層の重みに対する偏微分<img src="https://latex.codecogs.com/gif.latex?\frac{\partial&space;E}{\partial&space;w_1}" />は、<img src="https://latex.codecogs.com/gif.latex?\frac{\partial&space;E}{\partial&space;u_2}\frac{\partial&space;u_2}{\partial&space;u_1}\frac{\partial&space;u_1}{\partial&space;w_1}=-0.450\times&space;w_2(=2.0)\times&space;x(=0.1)" />となっている
+- 出力層でのデルタ<img src="https://latex.codecogs.com/gif.latex?\frac{\partial&space;E}{\partial&space;u_2}" />は、シグモイド関数による出力値（0.550）－正解ラベル（1）となっている
+- 重み2のデルタ<img src="https://latex.codecogs.com/gif.latex?\frac{\partial&space;E}{\partial&space;w_2}" />は、<img src="https://latex.codecogs.com/gif.latex?\frac{\partial&space;E}{\partial&space;u_2}\frac{\partial&space;u_2}{\partial&space;w_2}=-0.450\times&space;u_1(=0.1)" />となっている
+- 中間層でのデルタ<img src="https://latex.codecogs.com/gif.latex?\frac{\partial&space;E}{\partial&space;u_1}" />は、<img src="https://latex.codecogs.com/gif.latex?\frac{\partial&space;E}{\partial&space;u_2}\frac{\partial&space;u_2}{\partial&space;z_1}\frac{\partial&space;z_1}{\partial&space;u_1}=-0.450\times&space;w_2(=2.0)" />となっている（<img src="https://latex.codecogs.com/gif.latex?u_1>0"/>のため、ReLU関数の微分は1）
+- 重み1のデルタ<img src="https://latex.codecogs.com/gif.latex?\frac{\partial&space;E}{\partial&space;w_1}" />は、<img src="https://latex.codecogs.com/gif.latex?\frac{\partial&space;E}{\partial&space;u_2}\frac{\partial&space;u_2}{\partial&space;z_1}\frac{\partial&space;z_1}{\partial&space;u_1}\frac{\partial&space;u_1}{\partial&space;x_1}=-0.450\times&space;w_2(=2.0)\times&space;x(=0.1)" />となっている
 
 ## 勾配消失問題
 
