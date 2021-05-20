@@ -163,7 +163,7 @@
     - <img src="https://latex.codecogs.com/gif.latex?\eta"/>：学習率、<img src="https://latex.codecogs.com/gif.latex?\mu" />：慣性パラメータ
     - 局所的最適解を抜け出て、大域的最適解に到達しやすい
   - AdaGrad
-    - <img src="https://latex.codecogs.com/gif.latex?w^{(t+1)}=w^{(t)}-\eta\frac{1}{\sqrt{h_t}+\theta}\nable&space;E,\:\:h_t=h_{t-1}+(\nabla&space;E)^2,\:\:h_0=\theta" />
+    - <img src="https://latex.codecogs.com/gif.latex?w^{(t+1)}=w^{(t)}-\eta\frac{1}{\sqrt{h_t}+\theta&space;}\nabla&space;E,\:\:h_t=h_{t-1}+(\nabla&space;E)^2,\:\:h_0=\theta" />
   - RMSProp
   - Adam
 ## 過学習
