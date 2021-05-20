@@ -159,7 +159,7 @@
   - パラメータごとに学習率を可変にする
 - 学習率最適化手法
   - モメンタム
-    - <img src="https://latex.codecogs.com/gif.latex?w^{(t+1)}=w^{(t)}+V_t\:\:V_t=\mu&space;V_{t-1}-\eta\nabra&space;E" />
+    - <img src="https://latex.codecogs.com/gif.latex?w^{(t+1)}=w^{(t)}+V_t\:\:V_t=\mu&space;V_{t-1}-\eta\nabla&space;E" />
   - AdaGrad
   - RMSProp
   - Adam
