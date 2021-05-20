@@ -161,11 +161,21 @@
   - モメンタム
     - <img src="https://latex.codecogs.com/gif.latex?w^{(t+1)}=w^{(t)}+V_t,\:\:V_t=\mu&space;V_{t-1}-\eta\nabla&space;E" />
     - <img src="https://latex.codecogs.com/gif.latex?\eta"/>：学習率、<img src="https://latex.codecogs.com/gif.latex?\mu" />：慣性パラメータ
-    - 局所的最適解を抜け出て、大域的最適解に到達しやすい
+    - 局所的最適解を抜け出て、大域的最適解に早く到達しやすい
   - AdaGrad
     - <img src="https://latex.codecogs.com/gif.latex?w^{(t+1)}=w^{(t)}-\eta\frac{1}{\sqrt{h_t}+\theta&space;}\nabla&space;E,\:\:h_t=h_{t-1}+(\nabla&space;E)^2,\:\:h_0=\theta" />
+    - <img src="https://latex.codecogs.com/gif.latex?\theta"/>は分母をゼロにしないための小さな定数
+    - 学習率を徐々に小さくすることで勾配の緩やかな誤差関数に対して最適値に近付けやすい一方、鞍点問題を引き起こすことがある
   - RMSProp
+    - <img src="https://latex.codecogs.com/gif.latex?w^{(t+1)}=w^{(t)}-\eta\frac{1}{\sqrt{h_t}+\theta&space;}\nabla&space;E,\:\:h_t=\alpha&space;h_{t-1}+(1-\alpha&space;)(\nabla&space;E)^2" />
+    - <img src="https://latex.codecogs.com/gif.latex?\alpha"/>は学習率の減衰度合いを調整するハイパーパラメータ
+    - 大域的最適解に到達しやすい
   - Adam
+    - モメンタムとRMSPropを組み合わせたアルゴリズム
+### 実装演習結果
+
+### 考察
+
 ## 過学習
 
 ## 畳み込みニューラルネットワークの概念
