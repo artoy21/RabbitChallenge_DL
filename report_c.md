@@ -146,7 +146,7 @@
 - バッチ正規化
   - ミニバッチ単位で、入力値のデータの偏りを抑制する手法
   - 活性化関数を適用する前後に、バッチ正規化層を加える
-    - ミニバッチごとに、学習データの平均と分散を<img src="https://latex.codecogs.com/gif.latex?\beta" />（シフトパラメータ）と<img src="https://latex.codecogs.com/gif.latex?\gamma"/>（スケールパラメータ）に変換し、2つのパラメータも同時に学習する
+    - ミニバッチごとに、学習データの平均と分散を<img src="https://latex.codecogs.com/gif.latex?\beta" />（シフトパラメータ）と<img src="https://latex.codecogs.com/gif.latex?\gamma"/>（スケールパラメータ）に変換する
   - ニューラルネットが学習しやすくなり精度や速度が上がる
 ### 実装演習結果
 
