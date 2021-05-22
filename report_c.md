@@ -149,8 +149,13 @@
     - ミニバッチごとに、学習データの平均と分散を<img src="https://latex.codecogs.com/gif.latex?\beta" />（シフトパラメータ）と<img src="https://latex.codecogs.com/gif.latex?\gamma"/>（スケールパラメータ）に変換する
   - ニューラルネットが学習しやすくなり精度や速度が上がる
 ### 実装演習結果
+- MNISTの学習データを784（入力）-40-20-10（出力）のネットワークで学習
+- 活性化関数、重みの初期値設定を変えて比較
+<img src="https://user-images.githubusercontent.com/34636490/119218930-a7e23e80-bb1d-11eb-8877-cfec15dd886d.png" width=800 />
 
 ### 考察
+- 活性化関数にシグモイド関数を使い、重みを正規分布で初期化したモデルでは、学習が進まず勾配消失問題が起きていると考えられる
+- 活性化関数にReLU関数を使うと、
 
 ## 学習率最適化手法
 ### 要点のまとめ
