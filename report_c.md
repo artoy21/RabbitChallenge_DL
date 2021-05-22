@@ -181,7 +181,7 @@
     - モメンタムとRMSPropを組み合わせたアルゴリズム
 ### 実装演習結果
 - 学習率の違いによる学習結果の比較
-<img src="https://user-images.githubusercontent.com/34636490/119220869-86865000-bb27-11eb-8b52-39633f2fdf49.png" width=800 />
+<img src="https://user-images.githubusercontent.com/34636490/119220869-86865000-bb27-11eb-8b52-39633f2fdf49.png" width=600 />
 
 ### 考察
 
