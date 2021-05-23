@@ -216,8 +216,6 @@
 
 <img src="https://user-images.githubusercontent.com/34636490/119262960-14416880-bc18-11eb-8406-09df39d76094.png" width=800 />
 
-- ドロップアウトの比率を変えて、影響を確認
-
 
 ### 考察
 - 正則化においては、weight decayパラメータをある程度大きくすることで、過学習を防ぐ効果がみられる
