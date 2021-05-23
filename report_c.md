@@ -222,7 +222,6 @@
   - <img src="https://latex.codecogs.com/gif.latex?\lambda=0.01"/>では学習データの正解率が100％近い一方、検証データの正解率が70％強しか出ておらず、過学習に陥っていた
   - <img src="https://latex.codecogs.com/gif.latex?\lambda=0.1"/>の場合は学習データの正解率が90％程度に下がったが、検証データの正解率は70％程度を維持
   - 一方、<img src="https://latex.codecogs.com/gif.latex?\lambda=1"/>の場合は正則化項の影響が大きくなりすぎ、学習が進まない結果となった
-- ドロップアウトの比率が大きくすることで、
 
 ## 畳み込みニューラルネットワークの概念
 
