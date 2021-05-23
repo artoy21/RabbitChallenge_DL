@@ -212,7 +212,15 @@
   - データ量を変化させずに、異なるモデルを学習していると解釈できる
   
 ### 実装演習結果
+- L2正則化のweight decayパラメータを変えて、正則化の強さを確認
+
+<img src="https://user-images.githubusercontent.com/34636490/119262960-14416880-bc18-11eb-8406-09df39d76094.png" width=800 />
+
+
 ### 考察
+- 正則化においては、weight decayパラメータをある程度大きくすることで、過学習を防ぐ効果がみられる
+  - <img src="https://latex.codecogs.com/gif.latex?\lambda=0.01"/>では学習データの正解率が100％近い一方、検証データの正解率が％程度と過学習に陥っていた
+  - <img src="https://latex.codecogs.com/gif.latex?\lambda=0.1"/>の場合は学習データの正解率が％程度に下がったが、検証データの正解率は％程度を
 
 ## 畳み込みニューラルネットワークの概念
 
