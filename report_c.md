@@ -216,12 +216,15 @@
 
 <img src="https://user-images.githubusercontent.com/34636490/119262960-14416880-bc18-11eb-8406-09df39d76094.png" width=800 />
 
+- ドロップアウトの比率を変えて、影響を確認
+
 
 ### 考察
 - 正則化においては、weight decayパラメータをある程度大きくすることで、過学習を防ぐ効果がみられる
   - <img src="https://latex.codecogs.com/gif.latex?\lambda=0.01"/>では学習データの正解率が100％近い一方、検証データの正解率が70％強しか出ておらず、過学習に陥っていた
   - <img src="https://latex.codecogs.com/gif.latex?\lambda=0.1"/>の場合は学習データの正解率が90％程度に下がったが、検証データの正解率は70％程度を維持
   - 一方、<img src="https://latex.codecogs.com/gif.latex?\lambda=1"/>の場合は正則化項の影響が大きくなりすぎ、学習が進まない結果となった
+- ドロップアウトの比率が大きくすることで、
 
 ## 畳み込みニューラルネットワークの概念
 
