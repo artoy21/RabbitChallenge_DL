@@ -201,7 +201,7 @@
     - 重みが大きいパラメータは学習において重要だが、重みが大きすぎると過学習が起こる
     - 過学習が起こりそうな重みの大きさ以下で重みをコントロール
   - L1正則化
-    - 誤差関数に<img src="https://latex.codecogs.com/gif.latex?\lambda\mid&space;w\mid" />を加える（<img src="https://latex.codecogs.com/gif.latex?\lambda"/>はハイパーパラメータ）
+    - 誤差関数に<img src="https://latex.codecogs.com/gif.latex?\lambda\|&space;w\mid" />を加える（<img src="https://latex.codecogs.com/gif.latex?\lambda"/>はハイパーパラメータ）
   - L2正則化
     - 誤差関数に<img src="https://latex.codecogs.com/gif.latex?\lambda\sqrt{\mid&space;w\mid^2}" />を加える（<img src="https://latex.codecogs.com/gif.latex?\lambda"/>はハイパーパラメータ）
 ### 実装演習結果
