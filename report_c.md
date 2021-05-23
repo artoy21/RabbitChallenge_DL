@@ -197,13 +197,19 @@
     - ノードが多い
 - 正則化
   - ネットワークの自由度を抑制
-  - Weight decay
-    - 重みが大きいパラメータは学習において重要だが、重みが大きすぎると過学習が起こる
-    - 過学習が起こりそうな重みの大きさ以下で重みをコントロール
+    - Weight decay
+      - 重みが大きいパラメータは学習において重要だが、重みが大きすぎると過学習が起こる
+      - 過学習が起こりそうな重みの大きさ以下で重みをコントロール
   - L1正則化
-    - 誤差関数に<img src="https://latex.codecogs.com/gif.latex?\lambda\|&space;w\mid" />を加える（<img src="https://latex.codecogs.com/gif.latex?\lambda"/>はハイパーパラメータ）
+    - 誤差関数に<img src="https://latex.codecogs.com/gif.latex?\lambda\|&space;w\|" />を加える（<img src="https://latex.codecogs.com/gif.latex?\lambda"/>はハイパーパラメータ）
+    - Lasso推定量（スパース推定）
   - L2正則化
-    - 誤差関数に<img src="https://latex.codecogs.com/gif.latex?\lambda\sqrt{\mid&space;w\mid^2}" />を加える（<img src="https://latex.codecogs.com/gif.latex?\lambda"/>はハイパーパラメータ）
+    - 誤差関数に<img src="https://latex.codecogs.com/gif.latex?\lambda\sqrt{\|&space;w\|^2}" />を加える（<img src="https://latex.codecogs.com/gif.latex?\lambda"/>はハイパーパラメータ）
+    - Ridge推定量（縮小推定）
+- ドロップアウト
+  - ランダムにノードを削除して学習
+  - データ量を変化させずに、異なるモデルを学習していると解釈できる
+  
 ### 実装演習結果
 ### 考察
 
