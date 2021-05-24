@@ -240,9 +240,7 @@
 ## 最新のCNN
 ### 要点のまとめ
 - AlexNet
-  - ネットワークの構造（講義資料より）<br/>
-<img src="https://user-images.githubusercontent.com/34636490/119358983-18d35300-bce4-11eb-8091-515de166919a.png" width=800 />
-  
+  - ネットワークの構造（講義資料より）<br/><img src="https://user-images.githubusercontent.com/34636490/119358983-18d35300-bce4-11eb-8091-515de166919a.png" width=800 />
   - 224x224x3次元の入力画像に、畳み込み層を5回、MAXプーリングを2回、全結合層を2回適用
   - 過学習を防ぐために、出力層の近くの全結合層においてドロップアウトを使用
 ### 実装演習結果
