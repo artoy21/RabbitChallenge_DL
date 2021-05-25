@@ -5,7 +5,7 @@
 4. [day3 Section4:双方向RNN](#双方向RNN)
 5. [day3 Section5:Seq2Seq](#Seq2Seq)
 6. [day3 Section6:Word2Vec](#Word2Vec)
-7. [day3 Section7:AttensionMechanism](#Attension Mechanism)
+7. [day3 Section7:Attension Mechanism](#Attension機構)
 8. [day4 Section1:強化学習](#強化学習)
 9. [day4 Section2:AlphaGo](#AlphaGo)
 10. [day4 Section3:軽量化・高速化技術](#軽量化・高速化技術)
