@@ -237,8 +237,12 @@
 ### 実装演習結果
 - 畳み込みネットでMNISTデータを学習
   - 28x28x1次元の入力画像 > 5x5x30の畳み込みフィルタ層（活性化関数はReLU） > 2x2のMAXプーリング層<br/>> 全結合層（100次元、ReLU） > 全結合層（10次元、ソフトマックス）
+
+<img src="https://user-images.githubusercontent.com/34636490/119425590-a5146300-bd42-11eb-8a55-1885c0e16646.png" width=400 />
+
 ### 考察
-- 2_6_simple_convolution_network_after.ipynbの```def col2im```のコード中、<br/>
+- 学習データの正解率は99%を超え、検証データにおいても97%と、精度の高いモデルが学習できたとみられる
+- なお、実装演習用コード：2_6_simple_convolution_network_after.ipynbの```def col2im```において、<br/>
 ```img[:, :, y:y_max:stride, x:x_max:stride] += col[:, :, y, x, :, :]```となっているところは<br/>
 ```img[:, :, y:y_max:stride, x:x_max:stride] = col[:, :, y, x, :, :]```ではないかと思われる
 ## 最新のCNN
