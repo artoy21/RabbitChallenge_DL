@@ -236,7 +236,9 @@
   - 入力画像に対し、局所的な領域の最大値や平均値を取って、出力画像を作成
 ### 実装演習結果
 ### 考察
-
+- 2_6_simple_convolution_network_after.ipynbの```def col2im```のコード中、<br/>
+```img[:, :, y:y_max:stride, x:x_max:stride] += col[:, :, y, x, :, :]```となっているところは<br/>
+```img[:, :, y:y_max:stride, x:x_max:stride] = col[:, :, y, x, :, :]```ではないかと思われる
 ## 最新のCNN
 ### 要点のまとめ
 - AlexNet
