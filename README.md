@@ -6,3 +6,4 @@
 3. 深層学習（前編）
     - report_c.md
 4. 深層学習（後編）
+    - report_d.md
