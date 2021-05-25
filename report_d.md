@@ -25,8 +25,8 @@
 
 - BPTT
   - パラメータを更新する際に、時間方向にも遡ることが必要<br/>
-  - W_inの更新部分（講義資料より）
-<img src="https://user-images.githubusercontent.com/34636490/119507371-c0668900-bda9-11eb-8983-da190c00e22c.png" width=600 />
+    - W_(in)及びWの更新部分（講義資料より）
+<img src="https://user-images.githubusercontent.com/34636490/119507371-c0668900-bda9-11eb-8983-da190c00e22c.png" width=400 />
 
 ### 実装演習結果
 ### 考察
