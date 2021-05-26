@@ -74,7 +74,7 @@
 - Seq2Seqモデル
   - Encoder-Decoderモデルの一種
   - 機械対話や機械翻訳などに用いられる
-- Seq2Seqの全体像（講義資料より）<img src="https://user-images.githubusercontent.com/34636490/119629268-d0817580-be48-11eb-8dc5-edf5e8e81786.png" width=400/>
+- Seq2Seqの全体像（講義資料より）<br/><img src="https://user-images.githubusercontent.com/34636490/119629268-d0817580-be48-11eb-8dc5-edf5e8e81786.png" width=400/>
   - Encoder RNN
     - ユーザーがインプットしたテキストデータを、単語等のトークンに区切って渡す構造
     - vec1をRNNに入力し、hidden stateを出力。このhiddenstateと次の入力vec2をまたRNNに入力してきたhidden stateを出力という流れを繰り返す
