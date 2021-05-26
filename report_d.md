@@ -26,7 +26,12 @@
     - <img src="https://latex.codecogs.com/gif.latex?W_{(in)}"/>及び<img src="https://latex.codecogs.com/gif.latex?W"/>の更新部分（講義資料より）<br/><img src="https://user-images.githubusercontent.com/34636490/119507371-c0668900-bda9-11eb-8983-da190c00e22c.png" width=400 />
 
 ### 実装演習結果
+- バイナリ加算のRNN予測モデルにおいて、活性化関数をシグモイド関数からReLU関数に変えて比較
+<img src="https://user-images.githubusercontent.com/34636490/119667929-ae501d80-be71-11eb-82fd-4b3f9dd6aaff.png" width=600 />
+
 ### 考察
+- シグモイド関数を活性化関数とした場合、学習が進んでバイナリ加算をほぼ再現できるようになった
+- 活性化関数にReLUを用いると、勾配消失問題が起きたとみられ、学習が進まなかったとみられる
 
 ## LSTM
 ### 要点のまとめ
