@@ -5,7 +5,7 @@
 4. [day3 Section4:双方向RNN](#双方向RNN)
 5. [day3 Section5:Seq2Seq](#Seq2Seq)
 6. [day3 Section6:Word2Vec](#Word2Vec)
-7. [day3 Section7:Attension Mechanism](#Attension機構)
+7. [day3 Section7:Attention Mechanism](#Attention機構)
 8. [day4 Section1:強化学習](#強化学習)
 9. [day4 Section2:AlphaGo](#AlphaGo)
 10. [day4 Section3:軽量化・高速化技術](#軽量化・高速化技術)
@@ -91,17 +91,31 @@
   - HREDの課題を、VAEの潜在変数の概念を追加することで解決した構造
 - VAE
   - オートエンコーダ
+    - 教師なし学習の一種
+    - 入力データから潜在変数zに変換するニューラルネットワークがEncoder
+    - 潜在変数zをインプットとして入力データを復元するニューラルネットワークがDecoder
+    - zの次元が入力データより小さい場合、次元削減とみなすことができる
+  - VAE
+    - 潜在変数zが標準正規分布に従うことを仮定したオートエンコーダ
 ### 実装演習結果
 ### 考察
 
 ## Word2Vec
 ### 要点のまとめ
+- RNNには固定長形式で入力を渡す必要がある
+- Word2Vec
+  - 単語を固定長ベクトルで表す分散表現の学習を、現実的な計算速度とメモリ量で実現可能
+  - ボキャブラリ数×単語ベクトルの次元数の重みパラメータを学習
 
 ### 実装演習結果
 ### 考察
 
-## Attension機構
+## Attention機構
 ### 要点のまとめ
-
+- Seq2Seqの課題
+  - 長い文章への対応が難しい
+  - 文章が長くなるほど、内部表現の次元も大きくなっていく仕組みが必要
+- Attention Mechanism
+  - 「入力と出力のどの単語が関連しているのか」の関連度を学習する仕組み
 ### 実装演習結果
 ### 考察
