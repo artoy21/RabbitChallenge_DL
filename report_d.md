@@ -39,6 +39,7 @@
 - LSTMモデル
   - 全体像（講義資料より）
 <img src="https://user-images.githubusercontent.com/34636490/119625990-babe8100-be45-11eb-8b74-9ac643f2f573.png" width=800/>
+
   - CEC
     - 勾配消失および勾配爆発の解決方法として、勾配が常に1となるユニット
     - ニューラルネットワークの学習特性が無い
