@@ -76,11 +76,21 @@
   - 機械対話や機械翻訳などに用いられる
 - Seq2Seqの全体像（講義資料より）<br/><img src="https://user-images.githubusercontent.com/34636490/119629268-d0817580-be48-11eb-8dc5-edf5e8e81786.png" width=400/>
   - Encoder RNN
-    - ユーザーがインプットしたテキストデータを、単語等のトークンに区切って渡す構造
-    - vec1をRNNに入力し、hidden stateを出力。このhiddenstateと次の入力vec2をまたRNNに入力してきたhidden stateを出力という流れを繰り返す
-    - 最後のvecを入れたときのhiddenstateはthoughtvectorと呼ばれ、入力した文の意味を表すベクトル
+    - 入力テキストデータを単語等のトークンに区切り、Embeddingにより分散表現ベクトルを用意
+    - 分散表現ベクトルをエンコーダRNNに入力し、hidden stateを計算
+    - 最後のhidden stateはthought vectorと呼ばれ、入力した文の文脈を表す
   - Decoder RNN
-    - システムがアウトプットデータを、単語等のトークンごとに生成する構造
+    - エンコーダRNNのthought vectorを入力とし、出力トークンの生成確率を計算
+    - 選ばれたトークンをEmbeddingして次の入力とする手順を繰り返す
+- HRED
+  - Seq2Seq＋Context RNN
+    - Context RNN: エンコーダによる各文章の系列をまとめて、これまでの会話コンテキスト全体を表すベクトルに変換する構造
+  - 過去複数個の会話から次の発話を生成する
+  - Seq2seqでは会話の文脈無視で応答がなされるが、HREDでは前の会話の流れに即して応答するため、より人間らしい文章が生成される
+- VHRED
+  - HREDの課題を、VAEの潜在変数の概念を追加することで解決した構造
+- VAE
+  - オートエンコーダ
 ### 実装演習結果
 ### 考察
 
