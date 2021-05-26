@@ -20,13 +20,10 @@
   - 音声データ
   - テキストデータ
 - 時系列情報を扱うために、過去の時間の状態を保持し、そこから次の時間の状態を再帰的に求める構造<br/>
-  - RNNの構造イメージ（講義資料より）
-<img src="https://user-images.githubusercontent.com/34636490/119506206-a8dad080-bda8-11eb-8fff-8aff117acc71.png" width=600/>
-
+  - RNNの構造イメージ（講義資料より）<br/><img src="https://user-images.githubusercontent.com/34636490/119506206-a8dad080-bda8-11eb-8fff-8aff117acc71.png" width=600/>
 - BPTT
   - パラメータを更新する際に、時間方向にも遡ることが必要<br/>
-    - <img src="https://latex.codecogs.com/gif.latex?W_{(in)}"/>及び<img src="https://latex.codecogs.com/gif.latex?W"/>の更新部分（講義資料より）
-<img src="https://user-images.githubusercontent.com/34636490/119507371-c0668900-bda9-11eb-8983-da190c00e22c.png" width=400 />
+    - <img src="https://latex.codecogs.com/gif.latex?W_{(in)}"/>及び<img src="https://latex.codecogs.com/gif.latex?W"/>の更新部分（講義資料より）<br/><img src="https://user-images.githubusercontent.com/34636490/119507371-c0668900-bda9-11eb-8983-da190c00e22c.png" width=400 />
 
 ### 実装演習結果
 ### 考察
@@ -37,9 +34,7 @@
   - 時系列を遡れば遡るほど勾配が消失していくため、長い時系列の学習が困難
   - ネットワークの構造自体を変えて解決したものがLSTM
 - LSTMモデル
-  - 全体像（講義資料より）
-<img src="https://user-images.githubusercontent.com/34636490/119625990-babe8100-be45-11eb-8b74-9ac643f2f573.png" width=800/>
-
+  - 全体像（講義資料より）<br/><img src="https://user-images.githubusercontent.com/34636490/119625990-babe8100-be45-11eb-8b74-9ac643f2f573.png" width=800/>
   - CEC
     - 勾配消失および勾配爆発の解決方法として、勾配が常に1となるユニット
     - ニューラルネットワークの学習特性が無い
