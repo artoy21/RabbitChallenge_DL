@@ -82,7 +82,7 @@
 - 双方向RNNのイメージ（講義資料より）<br/><img src="https://user-images.githubusercontent.com/34636490/119627792-7a600280-be47-11eb-8c13-e4954314ee28.png" width=400/>
   - 時系列順（古いデータから新しいデータへ）だけでなく、新しいデータから古いデータを入力して再帰的に状態を更新するユニットを持つ
 ### 実装演習結果
-- 前の5単語から次の単語を予測する実装演習において、双方向RNN（15ユニットのGRUセル×2）を使用<br/><img src="https://user-images.githubusercontent.com/34636490/120073929-6e897000-c0d5-11eb-896b-2432b8a243e3.png" width=300 />
+- 前の5単語から次の単語を予測する実装演習において、双方向RNN（15ユニットのGRUセル×2）を使用<br/><img src="https://user-images.githubusercontent.com/34636490/120073929-6e897000-c0d5-11eb-896b-2432b8a243e3.png" width=400 />
 - LSTMとGRU同様に100エポックで学習<br/><img src="https://user-images.githubusercontent.com/34636490/120074060-06875980-c0d6-11eb-8b60-d97293547dfe.png" width=900/>
 - テストデータに対して、```Some of them looks like 'money'```との予測
 ### 考察
