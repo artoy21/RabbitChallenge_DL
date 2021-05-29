@@ -68,7 +68,12 @@
 - GRUの全体像（講義資料より）<br/><img src="https://user-images.githubusercontent.com/34636490/119627503-3a991b00-be47-11eb-8572-6184d4d7f921.png" width=800/>
 
 ### 実装演習結果
+- 前の5単語から次の単語を予測する実装演習において、GRUセルを使用<br/><img src="https://user-images.githubusercontent.com/34636490/120073397-0df93380-c0d3-11eb-858c-d6d232951530.png" width=300 />
+- LSTM同様に100エポックで学習<br/><img src="https://user-images.githubusercontent.com/34636490/120073503-85c75e00-c0d3-11eb-897e-c576a6714b5b.png" width=300/>
+- テストデータに対して、```Some of them looks like 'good'```との予測
 ### 考察
+- GRUを用いた場合でも、LSTMと同様に過学習の傾向がみられた
+- ただし、テストデータに対しては、一見文章として意味の通る単語（good）を予測しており、LSTMより文法構造を学習しているのかもしれない
 
 ## 双方向RNN
 ### 要点のまとめ
