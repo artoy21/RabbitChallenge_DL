@@ -69,7 +69,7 @@
 
 ### 実装演習結果
 - 前の5単語から次の単語を予測する実装演習において、GRUセルを使用<br/><img src="https://user-images.githubusercontent.com/34636490/120073397-0df93380-c0d3-11eb-858c-d6d232951530.png" width=300 />
-- LSTM同様に100エポックで学習<br/><img src="https://user-images.githubusercontent.com/34636490/120073503-85c75e00-c0d3-11eb-897e-c576a6714b5b.png" width=300/>
+- LSTM同様に100エポックで学習<br/><img src="https://user-images.githubusercontent.com/34636490/120073503-85c75e00-c0d3-11eb-897e-c576a6714b5b.png" width=600/>
 - テストデータに対して、```Some of them looks like 'good'```との予測
 ### 考察
 - GRUを用いた場合でも、LSTMと同様に過学習の傾向がみられた
