@@ -51,8 +51,8 @@
     - CECに保存されている過去の情報を、任意のタイミングで他のノードに伝播させるための構造
 
 ### 実装演習結果
-- 前の5単語から次の単語を予測する実装演習において、LSTMセルを使用<br/><img src="https://user-images.githubusercontent.com/34636490/120073048-b5756680-c0d1-11eb-9973-ddf2ead87722.png" width=400 />
-- 100エポックで学習<br/><img src="https://user-images.githubusercontent.com/34636490/120073130-05ecc400-c0d2-11eb-9411-bd6b53ce466e.png" width=400/>
+- 前の5単語から次の単語を予測する実装演習において、LSTMセルを使用<br/><img src="https://user-images.githubusercontent.com/34636490/120073048-b5756680-c0d1-11eb-9973-ddf2ead87722.png" width=300 />
+- 100エポックで学習<br/><img src="https://user-images.githubusercontent.com/34636490/120073130-05ecc400-c0d2-11eb-9411-bd6b53ce466e.png" width=300/>
 - テストデータに対して、```Some of them looks like 'look'```との予測
 ### 考察
 - 学習が進むにつれ、訓練データに対する正解率が上がる一方、検証データに対する正解率が下がり、過学習に陥ったとみられる
