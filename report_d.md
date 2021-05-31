@@ -119,6 +119,16 @@
   - VAE
     - 潜在変数zが標準正規分布に従うことを仮定したオートエンコーダ
 ### 実装演習結果
+- EncoderとDecoder共にGRUとしたSeq2Seqモデルによる機械翻訳
+  - Embeddingの次元、GRUのユニット数はすべて256
+  - 40,000サンプルの文章対を用いて10エポックの学習を実行
+<img src="https://user-images.githubusercontent.com/34636490/120207540-8abd1680-c267-11eb-958f-3cf7761d5ab9.png" width=400 />
+
+- テストデータのBLUE=17.34
+- テストデータにおける翻訳結果
+  - ```show your own business . -> 自分 の 仕事 を を し 。 。```
+  - ```he lived a hard life . -> 彼 は 人生 い 生活 に 送 っ た 。```
+  - ```i can 't swim at all . > 私 は は 泳げ な い 。```
 ### 考察
 
 ## Word2Vec
