@@ -140,12 +140,15 @@
 - Word2Vec
   - 単語を固定長ベクトルで表す分散表現の学習を、現実的な計算速度とメモリ量で実現可能
   - ボキャブラリ数×単語ベクトルの次元数の重みパラメータを学習
+  - 代表的な手法としては、CBoW(continuous bag-of-words)とskip-gramの2つがある
 
 ### 実装演習結果
+- 単語の語彙数8,778を、Word2Vecを用いて32次元のベクトル表現に
+- CBoWを用いた結果<br/>
+<img src="https://user-images.githubusercontent.com/34636490/120907865-26071f00-c6a0-11eb-9112-3cdcceba9ab7.png" width=150 />
+
 - skip-gramを用いた結果<br/>
 <img src="https://user-images.githubusercontent.com/34636490/120907853-f3f5bd00-c69f-11eb-86e1-ee256e57df1b.png" width=150/>
-
-<img src="https://user-images.githubusercontent.com/34636490/120907865-26071f00-c6a0-11eb-9112-3cdcceba9ab7.png" width=150 />
 
 ### 考察
 
