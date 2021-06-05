@@ -143,7 +143,9 @@
 
 ### 実装演習結果
 - skip-gramを用いた結果<br/>
-<img src="https://user-images.githubusercontent.com/34636490/120907853-f3f5bd00-c69f-11eb-86e1-ee256e57df1b.png" width=300/>
+<img src="https://user-images.githubusercontent.com/34636490/120907853-f3f5bd00-c69f-11eb-86e1-ee256e57df1b.png" width=150/>
+
+<img src="https://user-images.githubusercontent.com/34636490/120907865-26071f00-c6a0-11eb-9112-3cdcceba9ab7.png" width=150 />
 
 ### 考察
 
