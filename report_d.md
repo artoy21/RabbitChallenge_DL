@@ -142,6 +142,9 @@
   - ボキャブラリ数×単語ベクトルの次元数の重みパラメータを学習
 
 ### 実装演習結果
+- skip-gramを用いた結果<br/>
+<img src="https://user-images.githubusercontent.com/34636490/120907853-f3f5bd00-c69f-11eb-86e1-ee256e57df1b.png" width=300/>
+
 ### 考察
 
 ## AttentionMechanism
