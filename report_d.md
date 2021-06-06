@@ -143,14 +143,19 @@
   - 代表的な手法としては、CBoW(continuous bag-of-words)とskip-gramの2つがある
 
 ### 実装演習結果
-- 単語の語彙数8,778を、Word2Vecを用いて32次元のベクトル表現に
-- CBoWを用いた結果<br/>
+- Transformer演習用の機械翻訳学習データから、日本語の文章50,000サンプルを使用
+  - 単語の語彙数8,778を、Word2Vecを用いて32次元のベクトル表現に埋め込み
+- CBoW及びskip-gramで学習したモデルをもとに、「家族」に近い単語、「父－男＋女」に近い単語を出力
+1. CBoWを用いた結果<br/>
 <img src="https://user-images.githubusercontent.com/34636490/120907865-26071f00-c6a0-11eb-9112-3cdcceba9ab7.png" width=150 />
 
-- skip-gramを用いた結果<br/>
+2. skip-gramを用いた結果<br/>
 <img src="https://user-images.githubusercontent.com/34636490/120907853-f3f5bd00-c69f-11eb-86e1-ee256e57df1b.png" width=150/>
 
 ### 考察
+- 「家族」に近い単語としては、CBoWとskip-gramのどちらも、「」や「」
+- 「父－男＋女」に近い単語として、CBoWとskip-gramのどちらも正解と言える「母」を最も高いスコアで出力
+  - 単語レベルでの意味をベクトル表現
 
 ## AttentionMechanism
 ### 要点のまとめ
