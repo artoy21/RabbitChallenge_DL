@@ -168,8 +168,11 @@
 ### 実装演習結果
 - Transformer演習用の機械翻訳学習データを使用
 - エンコーダ及びデコーダにLSTM（ユニット数256）を用いたSeq2SeqモデルにAttentionを追加<br/>
-<img src="https://user-images.githubusercontent.com/34636490/120928804-3d3a2100-c721-11eb-8cd1-f64d2f031970.png" width=600/>
+<img src="https://user-images.githubusercontent.com/34636490/120928804-3d3a2100-c721-11eb-8cd1-f64d2f031970.png" width=700/>
 
+- 翻訳例におけるAttentionの分布を確認
+  - 入力文: ```<s> i study at school . </s>```
+  - 出力文: ```<s> 私 は 学校 で 勉強 し ま す 。 </s>```<br/>
 <img src="https://user-images.githubusercontent.com/34636490/120928587-2e06a380-c720-11eb-913a-3c25841f2cf7.png" width=300/>
 
 
