@@ -8,7 +8,7 @@
 7. [day3 Section7:Attention Mechanism](#AttentionMechanism)
 8. [day4 Section1:強化学習](#強化学習)
 9. [day4 Section2:AlphaGo](#AlphaGo)
-10. [day4 Section3:軽量化・高速化技術](#軽量化・高速化技術)
+10. [day4 Section3:軽量化・高速化技術](#軽量化／高速化技術)
 11. [day4 Section4:応用モデル](#応用モデル)
 12. [day4 Section5:Transformer](#Transformer)
 13. [day4 Section6:物体検知・セグメンテーション](#物体検知・セグメンテーション)
@@ -221,7 +221,7 @@
   - 学習法
   - PolicyValueNet
   - Residual Network
-## 軽量化・高速化技術
+## 軽量化／高速化技術
 ### 要点のまとめ
 - 分散深層学習
   - データ並列化
