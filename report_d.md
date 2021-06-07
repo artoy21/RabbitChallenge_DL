@@ -207,7 +207,7 @@
 - 方策勾配法
   - 方策パラメータ<img src="https://latex.codecogs.com/gif.latex?\theta"/>をモデル化して最適化する手法<br/><img src="https://latex.codecogs.com/gif.latex?\theta^{(t+1)}=\theta^{(t)}+\varepsilon\nabla&space;J(\theta)"/>
   - 方策の良さ<img src="https://latex.codecogs.com/gif.latex?J"/>は平均報酬や割引報酬合計として定義
-  - 行動価値関数<img src="https://latex.codecogs.com/gif.latex?Q(s,a)"/>を定義すると、方策勾配定理が成り立つ<br/><img src="https://latex.codecogs.com/gif.latex?\nabla_{\theta}J(\theta)=E_{\pi_{\theta}}left[(\nabla_{\theta}\log\pi_{\theta}(a\mid&space;s)Q^{\pi}(s,a))\right]"/>
+  - 行動価値関数<img src="https://latex.codecogs.com/gif.latex?Q(s,a)"/>を定義すると、方策勾配定理が成り立つ<br/><img src="https://latex.codecogs.com/gif.latex?\nabla_{\theta}J(\theta)=E_{\pi_{\theta}}\left[(\nabla_{\theta}\log\pi_{\theta}(a\mid&space;s)Q^{\pi}(s,a))\right]"/>
 
 ## AlphaGo
 ### 要点のまとめ
