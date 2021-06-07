@@ -183,15 +183,15 @@
 ### 要点のまとめ
 - 機械学習の一分野
   - 行動の結果として与えられる報酬をもとに、行動を決定する原理を改善していく仕組み
-  - 与えられた環境の中で、エージェントがpolicyに基づいて行動を取る
-  - エージェントの行動によって環境中のstateが更新される
-  - 新しいstateに応じてrewardが得られる
-  - rewardの累積であるvalueを最大化することを目的に、最適なpolicyを探索する
+  - 与えられた環境の中で、エージェントが方策（policy <img src="https://latex.codecogs.com/gif.latex?\pi"/>）に基づいて行動を取る
+  - エージェントの行動によって環境中の状態（state）が更新される
+  - 新しい状態に応じて報酬（reward）が得られる
+  - 報酬の累積である価値（value）を最大化することを目的に、最適な方策を探索する
 - 強化学習の応用例：マーケティング
   - 環境：会社の販売促進部
   - エージェント：キャンペーンメールを送信する顧客を決めるソフトウェア
   - 行動：顧客ごとに送信／非送信の2種類がある
-  - reward：キャンペーンの費用という負の報酬と、キャンペーンによる売上増加という正の報酬
+  - 報酬：キャンペーンの費用という負の報酬と、キャンペーンによる売上増加という正の報酬
 - 探索と利用のトレードオフ
   - 探索が足りない状態
     - 過去のデータで最良とされる行動のみを常に取り続ける場合、他にもっと良い行動を見つけることはできない
@@ -205,7 +205,9 @@
 - 方策関数
   - ある状態でどのような行動を採るのかの確率を与える関数
 - 方策勾配法
-  - 方策をモデル化して最適化する手法<br/><img src="https://latex.codecogs.com/gif.latex?\theta^{(t+1)}=\theta^{(t)}+\varepsilon\nabla&space;J(\theta)"/>
+  - 方策パラメータ<img src="https://latex.codecogs.com/gif.latex?\theta"/>をモデル化して最適化する手法<br/><img src="https://latex.codecogs.com/gif.latex?\theta^{(t+1)}=\theta^{(t)}+\varepsilon\nabla&space;J(\theta)"/>
+  - 方策の良さ<img src="https://latex.codecogs.com/gif.latex?J"/>は平均報酬や割引報酬合計として定義
+  - 行動価値関数<img src="https://latex.codecogs.com/gif.latex?Q(s,a)"/>を定義すると、方策勾配定理が成り立つ<br/><img src="https://latex.codecogs.com/gif.latex?\nabla_{\theta}J(\theta)=E_{\pi_{\theta}}left[(\nabla_{\theta}\log\pi_{\theta}(a\mid&space;s)Q^{\pi}(s,a))\right]"/>
 
 ## AlphaGo
 ### 要点のまとめ
