@@ -211,12 +211,32 @@
 
 ## AlphaGo
 ### 要点のまとめ
-
+- AlphatGo (Lee)
+  - 学習法
+  - PolicyNet
+  - ValueNet
+  - モンテカルロ木探索
+- AlphaGoZero
+  - AlphaGo (Lee)との違い
+  - 学習法
+  - PolicyValueNet
+  - Residual Network
 ## 軽量化・高速化技術
 ### 要点のまとめ
-
+- 分散深層学習
+  - データ並列化
+  - モデル並列化
+  - GPUによる高速化
+- モデルの軽量化
+  - 量子化
+  - 蒸留
+  - プルーニング
+    - モデルの精度に寄与が少ないニューロンを削減することでモデルの軽量化・高速化を図る
 ## 応用モデル
 ### 要点のまとめ
+- MobileNets
+- DenseNet
+- WaveNet
 
 ## Transformer
 ### 要点のまとめ
