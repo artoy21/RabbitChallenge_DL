@@ -213,14 +213,38 @@
 ### 要点のまとめ
 - AlphatGo (Lee)
   - 学習法
+    1. 教師あり学習によるRollOutPolicyとPolicyNetの学習
+      - 囲碁対局サイトの棋譜データから3000万局面分の教師データを用意し、教師と同じ着手を予測できるよう学習 
+    2. 強化学習によるPolicyNetの学習
+      - PolicyNet同士の対局シミュレーションを行い、方策勾配法で学習
+    3. 強化学習によるValueNetの学習
+      - PolicyNetを使用して対局シミュレーションを行い、勝敗を教師として学習
   - PolicyNet
+    - 全体像（講義資料より）<br/><img src="https://user-images.githubusercontent.com/34636490/121106065-3b1ab400-c840-11eb-90cf-3ce8d67c8865.png" width=500/>
+    - 入力データは現在の盤面の特徴を表す19ｘ19ｘ48チャネル
+    - 出力は```softmax```関数によって0～1の範囲になり、各（19ｘ19ある）マスに対する着手確率を表す
   - ValueNet
+    - 全体像（講義資料より）<br/><img src="https://user-images.githubusercontent.com/34636490/121106109-571e5580-c840-11eb-9838-07aa0ee0ac0d.png" width=500/>
+    - 入力データはPolicyNetと同じ特徴に加え、現在の手番を表す1チャネル
+    - 出力は```tanh```関数によって-1～+1の範囲になり、現局面の勝率を表す
+  - RollOutPolicy
+    - 各19ｘ19マスの着手予想確率を高速で計算するための線形関数
+
   - モンテカルロ木探索
+    - 盤面の評価値に頼らず、末端評価値（勝敗）を使う探索法
+    - 現局面から末端局面までPlayOutと呼ばれるランダムシミュレーションを多数回行い、その勝敗を集計して着手の優劣を決定
 - AlphaGoZero
   - AlphaGo (Lee)との違い
+    - 教師あり学習を一切行わず、強化学習のみ
+    - 特徴入力は石の配置のみで、ヒューリスティックな特徴量を使わない
+    - PolicyNetとValueNetを１つのネットワークに統合
+    - ResidualNetを導入
   - 学習法
+    - 
   - PolicyValueNet
-  - Residual Network
+    - 
+  - ResidualNet
+    - 
 ## 軽量化-高速化技術
 ### 要点のまとめ
 - 分散深層学習
