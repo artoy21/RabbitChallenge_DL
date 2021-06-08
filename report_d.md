@@ -254,13 +254,13 @@
        - 学習後のネットワークの勝率が高かった場合、学習後のネットワークを現状のネットワークとする
     
   - PolicyValueNet
-    - 全体像（講義資料より）<br/><img src="https://user-images.githubusercontent.com/34636490/121192426-e743b580-c8a7-11eb-9556-3590dfd37153.png" width=500/>
+    - 全体像（講義資料より）<br/><img src="https://user-images.githubusercontent.com/34636490/121192426-e743b580-c8a7-11eb-9556-3590dfd37153.png" width=600/>
     - 入力データは現在の盤面の特徴を表す19ｘ19ｘ17チャネル
     - 出力は各（19ｘ19ある）マスに対する着手確率を表すPolicy部分と、現局面の勝率を表すValue部分
   - ResidualNet
     - ネットワークにショートカット構造を追加して、勾配爆発や勾配消失を抑える効果を狙ったもの
     - 数の違うNetworkのアンサンブル効果が得られているという説もある
-    - 基本形（講義資料より）<br/><img src="https://user-images.githubusercontent.com/34636490/121193304-b0ba6a80-c8a8-11eb-8642-20e8c4cc0402.png" width=400/>
+    - 基本形（講義資料より）<br/><img src="https://user-images.githubusercontent.com/34636490/121193304-b0ba6a80-c8a8-11eb-8642-20e8c4cc0402.png" width=500/>
     - 派生形
       - Bottleneck<br/>1x1カーネルの畳み込みを利用し、1層目で次元削減を行って3層目で次元を復元する3層構造にしたもの      
       - PreActivation<br/>ResidualBlockの並びについて、BatchNorm＋ReLUとConvolutionの順序を逆にしたもの
