@@ -323,12 +323,17 @@
   - 計算量が増えると、多くの計算リソースが必要で、お金がかかってしまう
   - ディープラーニングモデルの軽量化・高速化・高精度化を実現
   - 通常の畳み込みレイヤーは計算量が多い
-    - 入力のサイズHｘW、チャネル数C、カーネルのサイズKｘK、フィルタ数（出力のチャネル数）Mとして、ストライド1でパディングを適用した場合の計算量は<img src="https://latex.codecogs.com/gif.latex?\H\times&space;W\times&space;K\times&space;K\times&space;C\times&space;M"/>
+    - 入力のサイズHｘW、チャネル数C、カーネルのサイズKｘK、フィルタ数（出力のチャネル数）Mとして、ストライド1でパディングを適用した場合の計算量は<img src="https://latex.codecogs.com/gif.latex?H\times&space;W\times&space;K\times&space;K\times&space;C\times&space;M"/>
   - Depthwise ConvolutionとPointwise Convolutionの組み合わせで軽量化を実現
   - Depthwise Convolution
-    - 
+    - 入力マップのチャネルごとに畳み込みを実施
+      - 出力マップの計算量は<img src="https://latex.codecogs.com/gif.latex?H\times&space;W\times&space;K\times&space;K\times&space;C"/>
+    - 各層ごとの畳み込みなので層間の関係性は全く考慮されない
+      - 通常はPW畳み込みとセットで使うことで解決
   - Pointwise Convolution
-    - 
+    - 1ｘ1カーネルを使用するため、1x1Convとも呼ばれる
+      - 出力マップの計算量は<img src="https://latex.codecogs.com/gif.latex?H\times&space;W\times&space;C\times&space;M"/>
+  - 通常の畳み込みの計算量が<img src="https://latex.codecogs.com/gif.latex?H\times&space;W\times&space;K\times&space;K\times&space;C\times&space;M"/>なのに対して、<br/><img src="https://latex.codecogs.com/gif.latex?H\times&space;W\times&space;K\times&space;K\times&space;C+H\times&space;W\times&space;C\times&space;M=H\times&space;W\times&space;C\times(K\times&space;K+M)"/>
 
 - DenseNet
   - 層が深くなるにつれて学習が難しくなるというニューラルネットワークの問題に対して、DenseBlockと呼ばれるモジュールを用いた
