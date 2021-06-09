@@ -382,4 +382,33 @@
 
 ## 物体検知-セグメンテーション
 ### 要点のまとめ
-- a
+- 物体認識タスク
+  - 分類
+  - 物体検知
+  - 意味領域分割
+  - 個体領域分割
+- 代表的データセット
+  - VOC12
+  - ILSVRC17
+  - MS COCO18
+  - OICOD18
+- 評価指標
+  - IoU: Intersection over Union
+  - AP: Average Precision
+  - mAP: mean Average Precision
+  - FPS: Flames per Second
+- 物体検知のフレームワーク
+  - 2段階検出器
+  - 1段階検出器
+- SSD: Single Shot Detector
+  - 概要
+  - ネットワーク構造（講義資料より）
+  - 特徴マップからの出力
+  - 多数のDefault Boxを用いることで生じる問題
+  - 損失関数
+- Semantic Segmentation
+  - アップサンプリング
+  - Deconvolution/Transposed convolution
+  - 輪郭情報の補完
+  - U-Net
+  - DeconvNet & SegNet
