@@ -333,15 +333,27 @@
   - Pointwise Convolution
     - 1ｘ1カーネルを使用するため、1x1Convとも呼ばれる
       - 出力マップの計算量は<img src="https://latex.codecogs.com/gif.latex?H\times&space;W\times&space;C\times&space;M"/>
-  - 通常の畳み込みの計算量が<img src="https://latex.codecogs.com/gif.latex?H\times&space;W\times&space;K\times&space;K\times&space;C\times&space;M"/>なのに対して、<br/><img src="https://latex.codecogs.com/gif.latex?H\times&space;W\times&space;K\times&space;K\times&space;C+H\times&space;W\times&space;C\times&space;M=H\times&space;W\times&space;C\times(K\times&space;K+M)"/>
+  - 通常の畳み込みの計算量が<img src="https://latex.codecogs.com/gif.latex?H\times&space;W\times&space;K\times&space;K\times&space;C\times&space;M"/>なのに対して、<br/><img src="https://latex.codecogs.com/gif.latex?H\times&space;W\times&space;K\times&space;K\times&space;C+H\times&space;W\times&space;C\times&space;M=H\times&space;W\times&space;C\times(K\times&space;K+M)"/>に削減できる
 
 - DenseNet
-  - 層が深くなるにつれて学習が難しくなるというニューラルネットワークの問題に対して、DenseBlockと呼ばれるモジュールを用いた
+  - 層が深くなるにつれて学習が難しくなるというニューラルネットワークの問題に対して、DenseBlockと呼ばれるモジュールを用いる
+    - 出力層に前の層の入力を足しあわせる
+    - 入力特徴マップのチャンネル数が<img src="https://latex.codecogs.com/gif.latex?n\times&space;k"/>だった場合、出力は<img src="https://latex.codecogs.com/gif.latex?(n+1)\times&space;k"/>となる
+    - kはネットワークのgrowth rateと呼ばれる
+  - DenseBlock同士の間にはTransition Layerと呼ばれるダウンサンプリングを行う層が挟まる
+  - ResNetとの違い
+    - DenseBlockでは前方の各層からの出力全てを後方の層へ入力
+    - RessidualBlockでは前1層の入力のみ後方の層へ入力
 - WaveNet
-  - 
+  - 音声波形を生成するモデル
+    - Pixel CNNを音声に応用したもの
+  - 時系列データに対して畳み込み（Dilated causal convolution）を適用
+    - 深層学習を用いた結合確率の学習が効率的に行えるアーキテクチャ
+    - 層が深くなるにつれて畳み込むリンクを離し、パラメータ数に対する受容野が広いという利点がある
 
 ## Transformer
 ### 要点のまとめ
-
+- a
 ## 物体検知-セグメンテーション
 ### 要点のまとめ
+- a
