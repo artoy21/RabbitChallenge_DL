@@ -350,7 +350,35 @@
 
 ## Transformer
 ### 要点のまとめ
-- a
+- ニューラル機械翻訳の問題点として、翻訳元の文の内容をひとつのベクトルで表現するため、文長が長くなると表現力が足りなくなる
+- 翻訳先の各単語を選択する際に、翻訳元の文中の各単語の隠れ状態を利用：Attention
+- Attentionは辞書オブジェクトと解釈できる
+  - queryに一致するkeyを索引し、対応するvalueを取り出す操作と見做すことができる
+- Transformer
+  - Encoder-DecoderモデルであるがRNNは使わない
+  - 必要なのはAttentionだけ
+  - 当時のSOTAをはるかに少ない計算量で実現
+- Transformerの全体像（講義資料より）<br/><img src="https://user-images.githubusercontent.com/34636490/121360770-ad3de680-c96f-11eb-9daf-92b4036cb079.png" width=500/>
+  - 2種類のAttentionを持つ
+  - Source Target Attention
+    - queryはTarget（翻訳先の単語の隠れ状態）、keyとvalueはSource（翻訳元の単語の隠れ状態）
+  - Self-Attention
+    - query、key、valueすべて翻訳元あるいは翻訳先の単語
+  - Encoder
+    - Self-AttentionとFeed-Forwardの組み合わせが6層
+    - Self-Attentionにより、文脈を考慮して各単語をエンコード
+      - 次元に応じてスケーリング（Scaled dot product attention）
+      - 重みパラメタの異なる８個のヘッドを使用（Multi-Head attention）
+    - Position-Wise Feed-Forward Networksにより、位置情報を保持したまま順伝播
+  - Decoder
+    - Encoderと同じく6層
+    - 各層で2種類のAttention
+    - Attentionの仕組みはEncoderとほぼ同じ
+  - Positional Encoding
+    - RNNを用いないので、文章の語順情報を追加する必要
+    - 単語の位置情報をエンコード<br/><img src=
+"https://render.githubusercontent.com/render/math?math=%5Cdisplaystyle+%5Cbegin%7Balign%2A%7D%0APE_%7B%28pos%2C+2i%29%7D+%26%3D+%5Csin+%5Cleft%28+%5Cfrac%7Bpos%7D%7B10000%5E%7B2i%2F512%7D%7D+%5Cright%29+%5C%5C%0APE_%7B%28pos%2C+2i%2B1%29%7D+%26%3D+%5Ccos+%5Cleft%28+%5Cfrac%7Bpos%7D%7B10000%5E%7B2i%2F512%7D%7D+%5Cright%29+%0A%5Cend%7Balign%2A%7D%0A" width=200/>
+
 ## 物体検知-セグメンテーション
 ### 要点のまとめ
 - a
