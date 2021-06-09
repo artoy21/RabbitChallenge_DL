@@ -319,8 +319,21 @@
 ## 応用モデル
 ### 要点のまとめ
 - MobileNets
+  - ディープラーニングモデルは精度は良いが、その分ネットワークが深くなり計算量が増える
+  - 計算量が増えると、多くの計算リソースが必要で、お金がかかってしまう
+  - ディープラーニングモデルの軽量化・高速化・高精度化を実現
+  - 通常の畳み込みレイヤーは計算量が多い
+    - 入力のサイズHｘW、チャネル数C、カーネルのサイズKｘK、フィルタ数（出力のチャネル数）Mとして、ストライド1でパディングを適用した場合の計算量は<img src="https://latex.codecogs.com/gif.latex?\H\times&space;W\times&space;K\times&space;K\times&space;C\times&space;M"/>
+  - Depthwise ConvolutionとPointwise Convolutionの組み合わせで軽量化を実現
+  - Depthwise Convolution
+    - 
+  - Pointwise Convolution
+    - 
+
 - DenseNet
+  - 層が深くなるにつれて学習が難しくなるというニューラルネットワークの問題に対して、DenseBlockと呼ばれるモジュールを用いた
 - WaveNet
+  - 
 
 ## Transformer
 ### 要点のまとめ
