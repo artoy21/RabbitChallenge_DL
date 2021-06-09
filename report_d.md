@@ -378,8 +378,7 @@
     - RNNを用いないので、文章の語順情報を追加する必要
     - 単語の位置情報をエンコード<br/><img src=
 "https://render.githubusercontent.com/render/math?math=%5Cdisplaystyle+%5Cbegin%7Balign%2A%7D%0APE_%7B%28pos%2C+2i%29%7D+%26%3D+%5Csin+%5Cleft%28+%5Cfrac%7Bpos%7D%7B10000%5E%7B2i%2F512%7D%7D+%5Cright%29+%5C%5C%0APE_%7B%28pos%2C+2i%2B1%29%7D+%26%3D+%5Ccos+%5Cleft%28+%5Cfrac%7Bpos%7D%7B10000%5E%7B2i%2F512%7D%7D+%5Cright%29+%0A%5Cend%7Balign%2A%7D%0A" width=200/>
-  - Attentionの可視化
-    - 言語構造を捉えていることが多い（講義資料より）<br/><img src="https://user-images.githubusercontent.com/34636490/121367111-fd6b7780-c974-11eb-8764-d54d348cb912.png" width=500/>
+  - Attentionの分布を可視化すると、言語構造を捉えていることが多い（講義資料より）<br/><img src="https://user-images.githubusercontent.com/34636490/121367111-fd6b7780-c974-11eb-8764-d54d348cb912.png" width=500/>
 
 ## 物体検知-セグメンテーション
 ### 要点のまとめ
