@@ -384,19 +384,65 @@
 ### 要点のまとめ
 - 物体認識タスク
   - 分類
+    - 入力画像に対し単一または複数のクラスラベルを出力
+    - 物体の位置は関係しない
   - 物体検知
+    - 入力画像に対し単一または複数のクラスラベルを出力
+    - Bounding Boxで物体の位置まで特定
   - 意味領域分割
+    - 入力画像の各ピクセルに対し単一のクラスラベルを出力
+    - インスタンスは区別しない
   - 個体領域分割
+    - 入力画像の各ピクセルに対し単一のクラスラベルを出力
+    - インスタンスを区別する
 - 代表的データセット
   - VOC12
+    - PASCAL VOC Object Detection Challengeで使用
+    - クラス数は20
+    - サンプル数は11,540
+    - 画像当たりのBox数は2.4
   - ILSVRC17
+    - ILSVRC Object Detection Challengeで使用
+      - ImageNet（21,841クラス/1400万枚以上）のサブセット
+    - クラス数は200
+    - サンプル数は476,668
+    - 画像当たりのBox数は1.1
   - MS COCO18
+    - MS COCO Object Detection Challengeで使用
+    - クラス数は80
+    - サンプル数は123,287
+    - 画像当たりのBox数は7.3
   - OICOD18
+    - Open Images Challenge Object Detectionで使用
+      - Open Images V4（6000クラス以上/900万枚以上）のサブセット
+    - クラス数は500
+    - サンプル数は1,743,042
+    - 画像当たりのBox数は7.0
+  - 画像当たりのBox数
+    - 小さい場合、アイコン的な画像で日常感とはかけ離れやすい
+    - 大きい場合、部分的な重なりも見られ日常生活のコンテキストに近い
 - 評価指標
+  - 物体検出においてはクラスラベルだけでなく、物体位置の予測精度も評価の対象
   - IoU: Intersection over Union
+    - Ground-Truth BBとPredicted BBのIntersectionの面積÷Unionの面積
+    - Confusion Matrixの要素を用いると、TP/(TP+FP+FN)
+    - Jaccard係数とも呼ばれる
+
   - AP: Average Precision
+    - クラスラベルのconfidence閾値が<img src="https://latex.codecogs.com/gif.latex?\beta"/>の時の、Recall水準<img src="https://latex.codecogs.com/gif.latex?R(\beta)"/>とPrecision水準<img src="https://latex.codecogs.com/gif.latex?P(\beta)"/>から、P(R)として、<img src="https://latex.codecogs.com/gif.latex?AP=\int_0^1P(R)dR"/>
+      - Precision-Recall曲線の下側面積
+      - 積分はInterpolated APとして有限のR（例11点）に対して計算される
+    - クラスごとにAPが計算される
+    - 物体位置のIoU閾値は0.5
   - mAP: mean Average Precision
+    - 全てのクラスのAPの算術平均
+    - クラス数をCとして、<img src="https://latex.codecogs.com/gif.latex?mAP=\frac{1}{C}\sum_{i=1}^CAP_i"/>
+  - mAPcoco
+    - MS COCOで導入された指標
+    - IoU閾値を0.5から0.95まで0.05刻みでmAPを計算し、算術平均
+    - <img src="https://latex.codecogs.com/gif.latex?mAP_{COCO}=\frac{mAP_{0.5}+mAP_{0.55}+\cdots+mAP_{0.95}}{10}"/>
   - FPS: Flames per Second
+    - 
 - 物体検知のフレームワーク
   - 2段階検出器
   - 1段階検出器
