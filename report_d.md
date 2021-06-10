@@ -439,10 +439,10 @@
     - クラス数をCとして、<img src="https://latex.codecogs.com/gif.latex?mAP=\frac{1}{C}\sum_{i=1}^CAP_i"/>
   - mAPcoco
     - MS COCOで導入された指標
-    - IoU閾値を0.5から0.95まで0.05刻みでmAPを計算し、算術平均
-    - <img src="https://latex.codecogs.com/gif.latex?mAP_{COCO}=\frac{mAP_{0.5}+mAP_{0.55}+\cdots+mAP_{0.95}}{10}"/>
+    - IoU閾値を0.5から0.95まで0.05刻みでmAPを計算し、算術平均<br/><img src="https://latex.codecogs.com/gif.latex?mAP_{COCO}=\frac{mAP_{0.5}+mAP_{0.55}+\cdots+mAP_{0.95}}{10}"/>
   - FPS: Flames per Second
-    - 
+    - 検出速度
+    - 検出精度だけでなく応用上は速度も重要な指標
 - 物体検知のフレームワーク
   - 2段階検出器
   - 1段階検出器
