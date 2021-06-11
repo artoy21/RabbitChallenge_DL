@@ -475,7 +475,7 @@
       - Faster RCNNでも用いられるSmooth L1 lossという考え方も利用
 - Semantic Segmentation
   - 入力画像と同じ解像度（特徴マップのサイズ）の出力画像があり、各ピクセルに対してクラス分類が行われる
-    - ネットワーク構造（講義資料より）<br/><img src="https://user-images.githubusercontent.com/34636490/121754090-b2a55780-cb4e-11eb-923a-71dfe99b84fa.png" width=600/>
+    - ネットワーク構造（講義資料より）<br/><img src="https://user-images.githubusercontent.com/34636490/121754090-b2a55780-cb4e-11eb-923a-71dfe99b84fa.png" width=500/>
   - アップサンプリング
     - ConvolutionとPoolingを繰り返すことにより解像度が落ちていくため、どのように入力画像の解像度に戻すかが重要
     - 計算量やメモリ使用を抑えつつ受容野を広げるためにはPoolingが必要
