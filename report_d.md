@@ -445,13 +445,34 @@
     - 検出精度だけでなく応用上は速度も重要な指標
 - 物体検知のフレームワーク
   - 2段階検出器
+    - 候補領域の検出とクラス推定を別々に行う
+    - 相対的に精度が高い傾向
+    - 相対的に計算量が大きく推論も遅い傾向
   - 1段階検出器
+    - 候補領域の検出とクラス推定を同時に行う
+    - 相対的に精度が低い傾向 
+    - 相対的に計算量が小さく推論も速い傾向
 - SSD: Single Shot Detector
   - 概要
-  - ネットワーク構造（講義資料より）
+    1. Default BOXを用意
+    2. Default BOXを変形して、confidenceを出力
+  - ネットワーク構造（講義資料より）<br/><img src="https://user-images.githubusercontent.com/34636490/121702199-9e406b00-cb0c-11eb-9390-a77ddbeaffd8.png" width=800/>
+    - ベースネットワークとしてVGG16を利用
+    - 全結合層はConvolution層に変更
   - 特徴マップからの出力
+    - マップ中の１つの特徴量における１つのDefault Boxについて、出力サイズはクラス数＋4（xy座標、幅、高さ）
+    - マップ中の各特徴量にk個のDefault Boxを用意するとき、出力サイズは<img src="https://latex.codecogs.com/gif.latex?k(#Class+4)"/>
+    - 特徴マップのサイズがHｘWのとき、出力サイズは<img src="https://latex.codecogs.com/gif.latex?k(#Class+4)HW"/>
   - 多数のDefault Boxを用いることで生じる問題
+    - Non-Maximum Suppression
+      - １つの物体に対して、冗長なBounding Boxの予測が生じる
+      - IoUが一定以上（例 0.3）のBounding Boxのうち、confidenceが最大のものを残す
+    - Hard Negative Mining
+      - 背景と予測されるBounding Boxが多くなる
+      - Negative（背景）とPositive（物体）の比率が一定（例 1:3）以上になるようにNegative予測値を抑える
   - 損失関数
+    - confidenceに対する損失に加え、検出位置に対する損失も考慮
+      - Faster RCNNでも用いられるSmooth L1 lossという考え方も利用
 - Semantic Segmentation
   - アップサンプリング
   - Deconvolution/Transposed convolution
