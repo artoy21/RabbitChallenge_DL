@@ -475,7 +475,7 @@
       - Faster RCNNでも用いられるSmooth L1 lossという考え方も利用
 - Semantic Segmentation
   - 入力画像と同じ解像度（特徴マップのサイズ）の出力画像があり、各ピクセルに対してクラス分類が行われる
-    - ネットワーク構造（講義資料より）<br/><img src="https://user-images.githubusercontent.com/34636490/121754090-b2a55780-cb4e-11eb-923a-71dfe99b84fa.png" width=800/>
+    - ネットワーク構造（講義資料より）<br/><img src="https://user-images.githubusercontent.com/34636490/121754090-b2a55780-cb4e-11eb-923a-71dfe99b84fa.png" width=600/>
   - アップサンプリング
     - ConvolutionとPoolingを繰り返すことにより解像度が落ちていくため、どのように入力画像の解像度に戻すかが重要
     - 計算量やメモリ使用を抑えつつ受容野を広げるためにはPoolingが必要
@@ -490,7 +490,7 @@
     - アップサンプリングを行いながら解像度の高い低レイヤー層の出力を加算することで、ローカルな情報を補完
   - U-Net
     - スキップコネクションを利用したアップサンプリング
-    - ネットワーク構造（講義資料より）<br/><img src="https://user-images.githubusercontent.com/34636490/121754843-973b4c00-cb50-11eb-81eb-d4e1750d2ca4.png" width=600/>
+    - ネットワーク構造（講義資料より）<br/><img src="https://user-images.githubusercontent.com/34636490/121754843-973b4c00-cb50-11eb-81eb-d4e1750d2ca4.png" width=500/>
     - 低レイヤー層の出力をチャネル方向に結合する点が特徴的
   - Unpooling
     - Deconvolutionでは畳み込みによってアップサンプリングを行っている
